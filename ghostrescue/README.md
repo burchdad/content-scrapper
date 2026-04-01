@@ -6,6 +6,58 @@ A **legal, compliant intelligence platform** for identifying human trafficking a
 
 ---
 
+## What This Platform Does
+
+GhostRescue helps teams move from raw inbound records to explainable, reviewable investigative leads.
+
+At a high level, it can:
+
+- Ingest and normalize permitted-source records.
+- Correlate entities/signals across sources and timelines.
+- Score risk with transparent confidence factors.
+- Surface actionable dashboards for analysts and supervisors.
+- Preserve auditability through archival, integrity checks, and governance telemetry.
+
+## Feature and Capability Snapshot
+
+- **Intelligence Operations Dashboard**
+  - Multi-tab operations view for Cases, Alerts, Entities, Trust, Archive, and Staging workflows.
+- **Case Intelligence Pipeline**
+  - NLP signal extraction, correlation features, adaptive risk scoring, and analyst-facing explanations.
+- **Trust and Governance Controls**
+  - Analyst feedback loops, false-positive calibration, decision telemetry, and role-aware governance signals.
+- **Tier 4 Proof Lifecycle**
+  - Proof generation, date-based archive retention, integrity hash validation, and optional webhook distribution.
+- **Document-Centric Investigations**
+  - Persistent document intake and case file retrieval plus temporary (non-persistent) drag-and-drop triage mode.
+- **Secure Temporary Collaboration**
+  - Temporary chat and session handling with no-store behavior, access-key support, and sensitive-mode role/identity checks.
+
+## Use Case Scenarios
+
+- **Rapid Triage Desk:** Prioritize inbound leads quickly by risk, confidence, and corroboration.
+- **Analyst Review Queue:** Route high-impact cases for structured human validation and feedback.
+- **Cross-Source Correlation Team:** Identify repeated patterns and entity overlaps across separate feeds.
+- **Audit and Oversight Unit:** Verify proof integrity, review archive history, and monitor governance behavior.
+- **Sensitive Investigations Cell:** Run temporary, controlled analysis before promoting results into persistent cases.
+
+## Industry Integration Fit
+
+GhostRescue is suitable as a decision-support layer anywhere organizations must review high-volume records and escalate responsibly.
+
+- **Public Safety / Investigations:** Lead development, cross-source intelligence, and structured analyst workflows.
+- **Risk and Compliance Programs:** Pattern triage, explainable scoring, and defensible audit trails.
+- **Corporate Security Operations:** Incident enrichment, case prioritization, and coordinated investigator collaboration.
+- **Humanitarian / NGO Intelligence Teams:** Public-source signal aggregation with strict human-governed review.
+
+Best results are achieved when integrated with:
+
+- existing case management processes,
+- role-based operational controls,
+- and human decision checkpoints before action.
+
+---
+
 ## Architecture
 
 ```
