@@ -1,0 +1,292 @@
+{
+  "job_id": "4d06fc9afed7417699cc4e9a3c8b9fea",
+  "status": "completed",
+  "plan": {
+    "intent": "media",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "embed_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "hashtags",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "social_links",
+        "field_type": "string",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "Pull recent short-form videos, reels, memes, and gifs about entrepreneurship and money mindset from TikTok, YouTube Shorts, Instagram Reels, Tenor, and Giphy"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:media",
+      "extract:images",
+      "extract:videos",
+      "extract:social_links",
+      "extract:embeds",
+      "prioritize:rich_media"
+    ],
+    "use_playwright": true,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [
+    {
+      "source_url": "https://giphy.com/trending-gifs",
+      "canonical_url": null,
+      "record_type": "media",
+      "title": "GIPHY - Be Animated",
+      "data": {
+        "title": "GIPHY - Be Animated",
+        "description": "GIPHY is the platform that animates your world. Find the GIFs, Clips, and Stickers that make your conversations more positive, more expressive, and more you.",
+        "business_name": "GIPHY - Be Animated",
+        "email": [],
+        "phone": [],
+        "social_links": []
+      },
+      "images": [
+        "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczBvcWlsYm54OHRhaTAza2d3MGpuc25sc2FjNHk5ZGhudzhhNGFzMCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/Omwf30luQm9Ge1xnfh/giphy.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExczBvcWlsYm54OHRhaTAza2d3MGpuc25sc2FjNHk5ZGhudzhhNGFzMCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/WRQBXSCnEFJIuxktnw/200.gif",
+        "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExczBvcWlsYm54OHRhaTAza2d3MGpuc25sc2FjNHk5ZGhudzhhNGFzMCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/OuQmhmAAdJFLi/giphy.gif",
+        "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExczBvcWlsYm54OHRhaTAza2d3MGpuc25sc2FjNHk5ZGhudzhhNGFzMCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/tXL4FHPSnVJ0A/200.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczBvcWlsYm54OHRhaTAza2d3MGpuc25sc2FjNHk5ZGhudzhhNGFzMCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/OfkGZ5H2H3f8Y/giphy.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExczBvcWlsYm54OHRhaTAza2d3MGpuc25sc2FjNHk5ZGhudzhhNGFzMCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/6512C7IqM14Pfmmhw1/giphy.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczBvcWlsYm54OHRhaTAza2d3MGpuc25sc2FjNHk5ZGhudzhhNGFzMCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/2UpKc8wYmhlPXchNhz/giphy.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczBvcWlsYm54OHRhaTAza2d3MGpuc25sc2FjNHk5ZGhudzhhNGFzMCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/GpyS1lJXJYupG/giphy.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExczBvcWlsYm54OHRhaTAza2d3MGpuc25sc2FjNHk5ZGhudzhhNGFzMCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/xT9IgG50Fb7Mi0prBC/giphy.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczBvcWlsYm54OHRhaTAza2d3MGpuc25sc2FjNHk5ZGhudzhhNGFzMCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/kC8N6DPOkbqWTxkNTe/200w.gif",
+        "https://giphy.com/static/img/giphy-be-animated-logo.gif"
+      ],
+      "videos": [],
+      "downloaded_images": [],
+      "confidence": 0.6,
+      "extraction_notes": [
+        "contact_extraction_completed"
+      ]
+    },
+    {
+      "source_url": "https://tenor.com/search/trending-gifs",
+      "canonical_url": "https://tenor.com/search/trending-gifs",
+      "record_type": "media",
+      "title": "Trending GIFs | Tenor",
+      "data": {
+        "canonical_url": "https://tenor.com/search/trending-gifs",
+        "title": "Trending GIFs | Tenor",
+        "description": "Click to view the GIF",
+        "name": "Trending GIFs | Tenor",
+        "headline": "Trending GIFs | Tenor",
+        "image": {
+          "@context": "http://schema.org",
+          "@type": "ImageObject",
+          "author": "saitaim",
+          "creator": "saitaim",
+          "name": "Trending GIFs | Tenor",
+          "keywords": "trending,gifs,search,memes",
+          "description": "With Tenor, maker of GIF Keyboard, add popular Trending animated GIFs to your conversations. Share the best GIFs now >>>",
+          "url": "https://tenor.com/search/trending-gifs",
+          "contentUrl": "https://media1.tenor.com/m/3YunLjG4jrEAAAAC/sendy-cat-meme.gif",
+          "thumbnailUrl": "https://media.tenor.com/3YunLjG4jrEAAAAe/sendy-cat-meme.png",
+          "width": 458,
+          "height": 498,
+          "dateCreated": "2025-09-09T09:36:24.271Z",
+          "uploadDate": "2025-09-09T09:36:24.271Z",
+          "representativeOfPage": true
+        },
+        "video_urls": [
+          "https://media.tenor.com/3YunLjG4jrEAAAPo/sendy-cat-meme.mp4",
+          "https://media.tenor.com/3YunLjG4jrEAAAPs/sendy-cat-meme.webm"
+        ],
+        "business_name": "Trending GIFs | Tenor",
+        "email": [],
+        "phone": [],
+        "social_links": [],
+        "hashtags": [
+          "#100",
+          "#2023",
+          "#BUFFTHEBURG",
+          "#Chill",
+          "#Chillguy",
+          "#Dancing",
+          "#Energetic",
+          "#Entspannter",
+          "#Hyped",
+          "#Its",
+          "#Jolly",
+          "#Live",
+          "#Pentol",
+          "#Pet",
+          "#Sussy",
+          "#The",
+          "#Trending",
+          "#arjun",
+          "#awkward",
+          "#basedbunny",
+          "#bull",
+          "#cat",
+          "#cooked",
+          "#cory",
+          "#cute",
+          "#dance",
+          "#dextools",
+          "#dog",
+          "#dwayne",
+          "#excited",
+          "#fresh",
+          "#funny",
+          "#gangnam",
+          "#gguh",
+          "#gog",
+          "#guy",
+          "#haxo",
+          "#hello",
+          "#hugo",
+          "#iceburg",
+          "#is",
+          "#it",
+          "#josh",
+          "#king",
+          "#latest",
+          "#little",
+          "#live",
+          "#love",
+          "#meme",
+          "#meow",
+          "#messi",
+          "#mintmake",
+          "#muito",
+          "#neox",
+          "#neoxiehats",
+          "#nie",
+          "#omg",
+          "#one",
+          "#pathetic",
+          "#peak",
+          "#pengu",
+          "#penguin",
+          "#pet",
+          "#petpet",
+          "#petting",
+          "#physics",
+          "#pill",
+          "#pills",
+          "#popular",
+          "#pudgy",
+          "#pudgypenguins",
+          "#rage",
+          "#ragebait",
+          "#reaction",
+          "#rrddiinn48",
+          "#s12",
+          "#sendy",
+          "#serious",
+          "#seriously",
+          "#shea",
+          "#silly",
+          "#smart",
+          "#snbf",
+          "#starmaker",
+          "#szop",
+          "#the",
+          "#tiktok",
+          "#transparent",
+          "#trending",
+          "#trollface",
+          "#up",
+          "#uptrend",
+          "#we",
+          "#what",
+          "#yaya109",
+          "#zhot"
+        ]
+      },
+      "images": [
+        "https://media.tenor.com/3YunLjG4jrEAAAAM/sendy-cat-meme.gif",
+        "https://media.tenor.com/gfVJGhFiIVQAAAAm/szop%C3%A1s.webp",
+        "https://media.tenor.com/6j303ORT5tQAAAAm/cat-cat-meme.webp",
+        "https://media.tenor.com/IHy5rP0rnP4AAAAm/gog-the-alien-dog-gog-alien.webp",
+        "https://media.tenor.com/jp1bSc1w-0kAAAAm/muito-happy.webp",
+        "https://media.tenor.com/YjjRqvT5sU4AAAAm/dancing-hyped.webp",
+        "https://media.tenor.com/Cv8bP1RiYGIAAAAm/sussy-therock.webp",
+        "https://tenor.com/assets/img/gif-maker-entrypoints/search-entrypoint-optimized.gif",
+        "https://media.tenor.com/obHuxSea764AAAAm/josh-pet-josh.webp",
+        "https://media.tenor.com/Zx-KLYI_g7EAAAAm/transparent-reaction.webp",
+        "https://media.tenor.com/1c980zwvlNYAAAAm/rage-bait-ragebait.webp",
+        "https://media.tenor.com/VROG_ThLPygAAAAm/petpet.webp",
+        "https://media.tenor.com/RKxRzqKF_U4AAAAM/live-live-stream.gif",
+        "https://media.tenor.com/LcsZveLfRvMAAAAM/smart-trending.gif",
+        "https://media.tenor.com/pj5KbNsREU0AAAAm/nie-wiem-patryk.webp",
+        "https://media.tenor.com/QtQSvAIoZkgAAAAM/hello-2023.gif",
+        "https://media.tenor.com/Q-0jH5F_uPYAAAAM/starmaker-snbf.gif",
+        "https://media.tenor.com/oppUqYXHlOMAAAAM/physics-wallah-physics-wala-meme.gif",
+        "https://media.tenor.com/mIirbFHFViYAAAAM/dog-awkward.gif",
+        "https://media.tenor.com/R6UP9a-VIUoAAAAM/fresh-%26-trending-trending.gif"
+      ],
+      "videos": [
+        "https://media.tenor.com/3YunLjG4jrEAAAPo/sendy-cat-meme.mp4",
+        "https://media.tenor.com/3YunLjG4jrEAAAPs/sendy-cat-meme.webm"
+      ],
+      "downloaded_images": [],
+      "confidence": 0.7,
+      "extraction_notes": [
+        "json_ld_parsed",
+        "contact_extraction_completed"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_processed": 2,
+    "records_extracted": 2,
+    "failures": 1,
+    "elapsed_ms": 129678
+  },
+  "warnings": [
+    {
+      "code": "SOURCE_PACK_AUGMENTED",
+      "message": "Discovery augmented target URLs with curated source-pack seeds.",
+      "url": null
+    },
+    {
+      "code": "PLAYWRIGHT_MISSING_FALLBACK",
+      "message": "Playwright browser missing; using static fetch fallback.",
+      "url": "https://triller.co/"
+    },
+    {
+      "code": "FETCH_FAILED",
+      "message": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'triller.co'. (_ssl.c:1000)",
+      "url": "https://triller.co/"
+    },
+    {
+      "code": "PLAYWRIGHT_MISSING_FALLBACK",
+      "message": "Playwright browser missing; using static fetch fallback.",
+      "url": "https://giphy.com/trending-gifs"
+    },
+    {
+      "code": "PLAYWRIGHT_MISSING_FALLBACK",
+      "message": "Playwright browser missing; using static fetch fallback.",
+      "url": "https://tenor.com/search/trending-gifs"
+    }
+  ]
+}

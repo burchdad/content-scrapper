@@ -1,0 +1,89 @@
+{
+  "job_id": "02c577cad4764f99a39a025f3f583cb2",
+  "status": "completed",
+  "plan": {
+    "intent": "media",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "social_links",
+        "field_type": "string",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "top dog video"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:media",
+      "extract:images",
+      "extract:videos",
+      "extract:social_links",
+      "extract:embeds",
+      "prioritize:rich_media"
+    ],
+    "use_playwright": true,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [],
+  "stats": {
+    "pages_processed": 0,
+    "records_extracted": 0,
+    "failures": 1,
+    "elapsed_ms": 73639
+  },
+  "warnings": [
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://tophat.com/students/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://app.tophat.com/register/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://app-ca.tophat.com/login?redirect=48"
+    },
+    {
+      "code": "DYNAMIC_TIMEOUT",
+      "message": "Dynamic fetch timed out",
+      "url": "https://success.tophat.com/login"
+    },
+    {
+      "code": "NO_RECORDS_EXTRACTED",
+      "message": "No records could be extracted.",
+      "url": null
+    }
+  ],
+  "diagnostics": {
+    "primary_issue": "ROBOTS_BLOCKED",
+    "recommendation": "Most candidate URLs disallowed scraping. Try different source packs or target public hosts that allow robots access.",
+    "warning_counts": {
+      "ROBOTS_BLOCKED": 3,
+      "DYNAMIC_TIMEOUT": 1,
+      "NO_RECORDS_EXTRACTED": 1
+    }
+  }
+}

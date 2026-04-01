@@ -1,0 +1,132 @@
+{
+  "job_id": "238c81edc886493b84de19cf088264af",
+  "status": "completed",
+  "plan": {
+    "intent": "media",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": true
+      },
+      {
+        "name": "description",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "image_list",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "audio_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "embed_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "social_links",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "hashtags",
+        "field_type": "array",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "pull all images, videos, and social media assets for this creator campaign"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:media",
+      "extract:images",
+      "extract:videos",
+      "extract:social_links",
+      "extract:embeds",
+      "prioritize:rich_media"
+    ],
+    "use_playwright": false,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [
+    {
+      "source_url": "https://giphy.com/trending-gifs",
+      "canonical_url": "https://media.example.com/gallery",
+      "record_type": "media",
+      "title": "Creator Hub Media Gallery",
+      "data": {
+        "canonical_url": "https://media.example.com/gallery",
+        "title": "Creator Hub Media Gallery",
+        "description": "Short videos, clips, and social assets",
+        "name": "Launch Reel",
+        "published_at": "2026-03-20T10:00:00Z",
+        "video_urls": [
+          "https://giphy.com/video/trailer.mp4",
+          "https://giphy.com/video/alt.webm"
+        ],
+        "embed_urls": [
+          "https://www.youtube.com/embed/abc123"
+        ],
+        "business_name": "Creator Hub",
+        "email": [],
+        "phone": [],
+        "social_links": [
+          "https://www.youtube.com/embed/abc123",
+          "https://instagram.com/ghostbrand",
+          "https://tiktok.com/@ghostbrand"
+        ],
+        "audio_urls": [
+          "https://giphy.com/audio/theme.mp3"
+        ],
+        "hashtags": [
+          "#campaign",
+          "#launch"
+        ]
+      },
+      "images": [
+        "https://giphy.com/images/gallery-1.jpg",
+        "https://media.example.com/cover.jpg",
+        "https://giphy.com/video/poster.jpg"
+      ],
+      "videos": [
+        "https://giphy.com/video/trailer.mp4",
+        "https://giphy.com/video/alt.webm"
+      ],
+      "downloaded_images": [],
+      "confidence": 0.8,
+      "extraction_notes": [
+        "json_ld_parsed",
+        "contact_extraction_completed",
+        "media_video_extraction_completed",
+        "media_social_extraction_completed"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_processed": 1,
+    "records_extracted": 1,
+    "failures": 0,
+    "elapsed_ms": 6
+  },
+  "warnings": [],
+  "diagnostics": {
+    "primary_issue": null,
+    "recommendation": "Run complete. Use records preview or CSV export for structured review.",
+    "warning_counts": {}
+  }
+}

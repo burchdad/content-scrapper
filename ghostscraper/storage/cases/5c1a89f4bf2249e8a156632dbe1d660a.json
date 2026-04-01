@@ -1,0 +1,110 @@
+{
+  "case_id": "5c1a89f4bf2249e8a156632dbe1d660a",
+  "status": "open",
+  "job_id": "571909bba5d74d209a407c20bdd39550",
+  "title": "Bulk UI case B",
+  "notes": null,
+  "created_at": "2026-03-30T03:41:27.367069Z",
+  "total_records_evaluated": 2,
+  "flagged_records_count": 2,
+  "average_risk_score": 0.0,
+  "highest_risk_band": "low",
+  "submission_checklist": [
+    {
+      "item_id": "human-review",
+      "label": "Primary human reviewer completed full case review.",
+      "completed": true,
+      "notes": "bulk runtime"
+    },
+    {
+      "item_id": "second-review",
+      "label": "Secondary reviewer confirmed escalation recommendation.",
+      "completed": false,
+      "notes": null
+    },
+    {
+      "item_id": "evidence-integrity",
+      "label": "Evidence links, terms, and media hashes verified.",
+      "completed": false,
+      "notes": null
+    },
+    {
+      "item_id": "submission-channel",
+      "label": "Submission destination selected (platform trust/safety or legal channel).",
+      "completed": false,
+      "notes": null
+    }
+  ],
+  "signoff": {
+    "reviewer_id": "runtime-bulk",
+    "approved": true,
+    "approved_at": "2026-03-30T03:41:27.383443Z",
+    "destination_channel": "platform-trust-safety"
+  },
+  "records": [
+    {
+      "record_index": 0,
+      "source_url": "https://commons.wikimedia.org/wiki/Category:Dogs",
+      "title": "Category:Dogs - Wikimedia Commons",
+      "risk_score": 0.0,
+      "risk_band": "low",
+      "signals": [],
+      "media_hashes": [
+        "sha256:1200809b54f93e51ef6a973c0dd92563dfcea34f955927c04be3dc15feb14cc1",
+        "sha256:64518f7bbbaf37ff846594b00b9de01f8122356e4bc395cd85f7ac21f09ca591",
+        "sha256:202e92db12dff5456fe061df68c2ccef6e53656fd709a55d6ac80be351421c82",
+        "sha256:68028d80233c0b57126700786e12aa948bf06e36fda9c22787456ac7f4b4d116",
+        "sha256:bfecdec7dede367e96d17936582fea9d3d141d2c32baa6aa9cf49755ea21a7aa",
+        "sha256:81b0141250b64bf8fce15fe3afc3adadcb3f9662fa9407e1fe461dbfd5b7f126",
+        "sha256:aaf53e7f77fdb99cf8b0c9a3881f4a5ba1d7b2a647068e80aa5d9f8607bc7f00",
+        "sha256:7256ff9b80496988abd07f71581b4c33bd52b73c57efb00dc75ef8e5f523631b",
+        "sha256:5056ac9374caead6e2be90a7f6e444d7ccb32c59397eec8659b9720c27457a48",
+        "sha256:fb31f49ad88af6a3e222f60637b045fe42a16c692b4d733fdf0bd6b287454173",
+        "sha256:8d3fb4bdb8993e7fe0469227177d48506eb648aa38d2c127101edd9c646c5e1f",
+        "sha256:594dc2a5f285e3c731e0073e94e8bd66f59dfd4cc58f935aea64e0dad49c3514",
+        "sha256:a87a2c9b0e59b13bfbfc26ecccdbdd454ad742c45f8bd5f69a3cfef4cad2a87b",
+        "sha256:11ad0418faf97ff2d990a208a55dc67cd376b9ab81a45aa613a541624955f7c4",
+        "sha256:7c90838723b40c2a6dab04c90c4737c534606ddb6b1a54b23c6d12a404e53cb5",
+        "sha256:f2eb4cdb04efdf7e452c0ad49aad1995cd37b22755c7e69c7a38f5e532d9fb1a",
+        "sha256:a00f487f02b28f9b5f909e3c32929cdc49d64bd6108504bbe41abe4a942432db",
+        "sha256:d7b02e407ce03460f2a3e4396769b088c7090e7831a9d2f68c425fde4e2da371",
+        "sha256:5c2ab8eea00586ed620400344c1701168f460ca24f06bf6f3ac9a16345512adc",
+        "sha256:80f60a9f8c97fbd56d60132fb355ea78e07695ff0ce1064523d023ab558ff3cc",
+        "sha256:908826c5f7bf5c149831680317d7824a149876f6baa5c69ac33dc6c9ef018a49",
+        "sha256:ff47c51aef717889dad869a4aff068f01ab201477445e1df03c24a3de316a618"
+      ]
+    },
+    {
+      "record_index": 1,
+      "source_url": "https://commons.wikimedia.org/w/index.php?title=Category:Dogs&filefrom=Polski+Owczarek+Podhala%C5%84ski+16.jpg#mw-category-media",
+      "title": "Category:Dogs - Wikimedia Commons",
+      "risk_score": 0.0,
+      "risk_band": "low",
+      "signals": [],
+      "media_hashes": [
+        "sha256:4b96a99a1db28c538cbf99f2afeccec680f95047fa1060de2df6ca22e4031e63",
+        "sha256:64518f7bbbaf37ff846594b00b9de01f8122356e4bc395cd85f7ac21f09ca591",
+        "sha256:202e92db12dff5456fe061df68c2ccef6e53656fd709a55d6ac80be351421c82",
+        "sha256:68028d80233c0b57126700786e12aa948bf06e36fda9c22787456ac7f4b4d116",
+        "sha256:bfecdec7dede367e96d17936582fea9d3d141d2c32baa6aa9cf49755ea21a7aa",
+        "sha256:81b0141250b64bf8fce15fe3afc3adadcb3f9662fa9407e1fe461dbfd5b7f126",
+        "sha256:aaf53e7f77fdb99cf8b0c9a3881f4a5ba1d7b2a647068e80aa5d9f8607bc7f00",
+        "sha256:7256ff9b80496988abd07f71581b4c33bd52b73c57efb00dc75ef8e5f523631b",
+        "sha256:5056ac9374caead6e2be90a7f6e444d7ccb32c59397eec8659b9720c27457a48",
+        "sha256:fb31f49ad88af6a3e222f60637b045fe42a16c692b4d733fdf0bd6b287454173",
+        "sha256:8d3fb4bdb8993e7fe0469227177d48506eb648aa38d2c127101edd9c646c5e1f",
+        "sha256:594dc2a5f285e3c731e0073e94e8bd66f59dfd4cc58f935aea64e0dad49c3514",
+        "sha256:a87a2c9b0e59b13bfbfc26ecccdbdd454ad742c45f8bd5f69a3cfef4cad2a87b",
+        "sha256:471ad5cf829b98f4f38ffb7873c62432906e08fc01036d912aee9efa3411e770",
+        "sha256:7ee8151d5cb5d838beb57af5a29d3bede59b122ec5670bc88fd4e7e6d11e88a3",
+        "sha256:8b4274e326dbdef4d0c387dc25d88c1994823e1247bda4305b6239ff1560c537",
+        "sha256:ba31d048a103d379c35eed7f806dfcc4994a94c55d087814eeccdf04373b1b8c",
+        "sha256:285d10c1ff5ab9f2342d54841515333e4f7aaa48f84c0864415c1344e1c9a4b0",
+        "sha256:8e463d201f47e3c8a8e1e00577108493474df03d41c286fa87f4bc989d63b58f",
+        "sha256:1b50aae5ca1110bc0fdc3b92865453aa0a25acbca78568d43c51d044a40835c7",
+        "sha256:e4154d1a2e7f9066ae5e605b636056b3e50fe3e9f34fc20669597696152bee35",
+        "sha256:ff47c51aef717889dad869a4aff068f01ab201477445e1df03c24a3de316a618"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "job_id": "682d628ef62e47eb995f34357ff3484d",
+  "status": "completed",
+  "plan": {
+    "intent": "media",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "social_links",
+        "field_type": "string",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "top dog video"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:media",
+      "extract:images",
+      "extract:videos",
+      "extract:social_links",
+      "extract:embeds",
+      "prioritize:rich_media"
+    ],
+    "use_playwright": true,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [
+    {
+      "source_url": "https://www.tumblr.com/explore/trending",
+      "canonical_url": null,
+      "record_type": "media",
+      "title": "Trending topics on Tumblr",
+      "data": {
+        "title": "Trending topics on Tumblr",
+        "description": "Explore trending topics on Tumblr. See all of the GIFs, fan art, and general conversation about the internet’s favorite things.",
+        "business_name": "Trending topics on Tumblr",
+        "email": [],
+        "phone": [],
+        "social_links": [
+          "https://x.com/aliyahsw0rld?s=21",
+          "https://x.com/aliyahsw0rld/status/2033730047056683251?s=46",
+          "https://www.instagram.com/nastasya_generalova/?hl=en",
+          "https://www.instagram.com/emackphoto/?hl=en"
+        ],
+        "video_urls": [
+          "https://va.media.tumblr.com/tumblr_tbtl9xmHJm1yzx85i.mp4",
+          "https://64.media.tumblr.com/tumblr_tbtl9xmHJm1yzx85i_frame1.jpg"
+        ],
+        "embed_urls": [
+          "https://www.google.com/recaptcha/api2/aframe",
+          "https://cm.g.doubleclick.net/partnerpixels?gdpr_consent=tcunavailable&gdpr=0&tcfe=3&us_privacy=1---&url=https%3A%2F%2Fwww.tumblr.com%2Fexplore%2Ftrending",
+          "https://eb2.3lift.com/sync?gdpr=&cmp_cs=&us_privacy=1---&gpp=&gpp_sid=&redir=https%3A%2F%2Famspbs.com%2Fsetuid%3Fbidder%3Dtriplelift%26gdpr%3D%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D%24UID",
+          "https://sync.inmobi.com/prebidjs?us_privacy=1---",
+          "https://ads.pubmatic.com/AdServer/js/user_sync.html?kdntuid=1&p=163304&us_privacy=1---",
+          "https://onetag-sys.com/usync/?cb=1774829547506&us_privacy=1---",
+          "https://ads.yieldmo.com/pbcas?us_privacy=1---&gdpr=0&gdpr_consent=&type=iframe",
+          "https://eb2.3lift.com/sync?us_privacy=1---&",
+          "https://cs.pgammedia.com/iframe?pbjs=1&coppa=0",
+          "https://automattic-d.openx.net/w/1.0/pd?us_privacy=1---"
+        ],
+        "hashtags": [
+          "#2danimation",
+          "#James",
+          "#aaliyah",
+          "#aesthetic",
+          "#alabama",
+          "#animals",
+          "#animation",
+          "#anti",
+          "#ao3",
+          "#archive",
+          "#arrow",
+          "#arsenal",
+          "#art",
+          "#artists",
+          "#batboys",
+          "#batbros",
+          "#batfam",
+          "#batfamily",
+          "#batkids",
+          "#batman",
+          "#batsiblings",
+          "#blorbo",
+          "#blorbos",
+          "#caine",
+          "#carlos",
+          "#catgirls",
+          "#cats",
+          "#character",
+          "#comfort",
+          "#cute",
+          "#cybershot",
+          "#cytat",
+          "#cytaty",
+          "#dc",
+          "#diary",
+          "#elinwarn",
+          "#f1",
+          "#fandom",
+          "#fandoms",
+          "#fanfic",
+          "#fanfiction",
+          "#fashion",
+          "#fictional",
+          "#firefly",
+          "#florial",
+          "#food",
+          "#frank",
+          "#funny",
+          "#funnytiktoks",
+          "#gif",
+          "#heartbreak",
+          "#humanization",
+          "#humor",
+          "#illustration",
+          "#incorrect",
+          "#jason",
+          "#javert",
+          "#jayroy",
+          "#jujutsu",
+          "#lauren",
+          "#lesmis",
+          "#life",
+          "#lit",
+          "#literature",
+          "#lol",
+          "#makeup",
+          "#media",
+          "#meirl",
+          "#meme",
+          "#memedaddy",
+          "#memes",
+          "#mine",
+          "#mua",
+          "#my",
+          "#myart",
+          "#pets",
+          "#photography",
+          "#poem",
+          "#poems",
+          "#poetic",
+          "#poetry",
+          "#poets",
+          "#polskie",
+          "#prose",
+          "#przemyslenia",
+          "#quotes",
+          "#rambles",
+          "#red",
+          "#roy",
+          "#rural",
+          "#sims",
+          "#smutny",
+          "#source",
+          "#spilled",
+          "#spring",
+          "#tadc",
+          "#the",
+          "#tik",
+          "#tiktok",
+          "#top",
+          "#tropes",
+          "#ts3",
+          "#tumblr",
+          "#twitter",
+          "#twst",
+          "#upload",
+          "#uploads",
+          "#we",
+          "#words",
+          "#writeblr",
+          "#writers",
+          "#writing"
+        ]
+      },
+      "images": [
+        "https://64.media.tumblr.com/56b57216eb9b68181d686cea10d9766b/b9ed49adb5e9d4c6-e1/s75x75_c1/5531f1183b2f6f9626c44f431a25fe1470b08c5d.jpg",
+        "https://64.media.tumblr.com/517d8a0ebf8a0095000b33caf187a5f4/ab2bb02bc8f2f844-ea/s75x75_c1/3ba40a6f25cc6adf5e3bc09a1ad5f2edec47dea0.png",
+        "https://64.media.tumblr.com/9673433ae68a7116913d8d2a450b7ef2/0703a13857b64abf-2c/s75x75_c1/a0ee5f12b14643cecfa9b6a448382e25f74997e7.jpg",
+        "https://64.media.tumblr.com/fd18d587a16926cdd3045c21a373732e/6d9c4e43fa96d5c6-cf/s75x75_c1/cff60fcb695d18b596adfbfff0ca8f43da157445.jpg",
+        "https://assets.tumblr.com/images/tumblrmart/badges/601-post-views/1.png?_v=ddd767ad00b4e9dcdf5523d756e1ef7d",
+        "https://assets.tumblr.com/images/tumblrmart/badges/601-post-views/1@2x.png?_v=ddd767ad00b4e9dcdf5523d756e1ef7d",
+        "https://assets.tumblr.com/images/tumblrmart/badges/booper-badge/1.png?_v=b5afb12e617876139e333926716cb114",
+        "https://assets.tumblr.com/images/tumblrmart/badges/booper-badge/1@2x.png?_v=b5afb12e617876139e333926716cb114",
+        "https://assets.tumblr.com/images/tumblrmart/badges/booper-badge-enthusiast/1.png?_v=1e789fb0304013b13a3e87e5b3ec2010",
+        "https://assets.tumblr.com/images/tumblrmart/badges/booper-badge-enthusiast/1@2x.png?_v=1e789fb0304013b13a3e87e5b3ec2010",
+        "https://assets.tumblr.com/images/tumblrmart/badges/booper-badge-super/1.png?_v=0e06f44ad7c346bae6aeadc3bffae40a",
+        "https://assets.tumblr.com/images/tumblrmart/badges/booper-badge-super/1@2x.png?_v=0e06f44ad7c346bae6aeadc3bffae40a",
+        "https://64.media.tumblr.com/1b185dd644f7e2f377604dccde847c16/dfe12608369e592c-9c/s100x200/8e9d9d2851116bd82d1130b534cf94cdd3a375b3.jpg",
+        "https://64.media.tumblr.com/1b185dd644f7e2f377604dccde847c16/dfe12608369e592c-9c/s250x400/aa07b0abb39b13a98b0261bbb37e172c47f31293.jpg",
+        "https://64.media.tumblr.com/1b185dd644f7e2f377604dccde847c16/dfe12608369e592c-9c/s400x600/e3f6a9dc27b1987742ee856405d93235ea3586c4.jpg",
+        "https://64.media.tumblr.com/1b185dd644f7e2f377604dccde847c16/dfe12608369e592c-9c/s500x750/edaa3f39d4d0408368736d4e34da5aa7bca27c94.jpg",
+        "https://64.media.tumblr.com/1b185dd644f7e2f377604dccde847c16/dfe12608369e592c-9c/s540x810/be49c22150a34d9b3977da5e602e68f7fb5d713b.jpg",
+        "https://64.media.tumblr.com/1b185dd644f7e2f377604dccde847c16/dfe12608369e592c-9c/s640x960/9b98ebe87f97f930b2f75808a5c43a60ff847fb0.jpg",
+        "https://64.media.tumblr.com/1b185dd644f7e2f377604dccde847c16/dfe12608369e592c-9c/s1280x1920/b11aed616fcfab6e6b409452e4edf7332c73ad3c.jpg",
+        "https://64.media.tumblr.com/17ea7bbbea7a563c65f6d82c09020b7e/dfe12608369e592c-8e/s100x200/ea678ea14148818519efbc5776b412b050cd14e6.jpg"
+      ],
+      "videos": [
+        "https://va.media.tumblr.com/tumblr_tbtl9xmHJm1yzx85i.mp4",
+        "https://64.media.tumblr.com/tumblr_tbtl9xmHJm1yzx85i_frame1.jpg"
+      ],
+      "downloaded_images": [],
+      "confidence": 0.6,
+      "extraction_notes": [
+        "contact_extraction_completed",
+        "media_video_extraction_completed",
+        "media_social_extraction_completed"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_processed": 1,
+    "records_extracted": 1,
+    "failures": 1,
+    "elapsed_ms": 26688
+  },
+  "warnings": [
+    {
+      "code": "SOURCE_PACK_AUGMENTED",
+      "message": "Discovery augmented target URLs with curated source-pack seeds.",
+      "url": null
+    },
+    {
+      "code": "FETCH_FAILED",
+      "message": "Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://triller.co/\nCall log:\n  - navigating to \"https://triller.co/\", waiting until \"networkidle\"\n",
+      "url": "https://triller.co/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://news.ycombinator.com/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://lemmy.world/"
+    }
+  ],
+  "diagnostics": {
+    "primary_issue": null,
+    "recommendation": "Run complete. Use records preview or CSV export for structured review.",
+    "warning_counts": {
+      "SOURCE_PACK_AUGMENTED": 1,
+      "FETCH_FAILED": 1,
+      "ROBOTS_BLOCKED": 2
+    }
+  }
+}

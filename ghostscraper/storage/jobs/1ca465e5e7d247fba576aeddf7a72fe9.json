@@ -1,0 +1,96 @@
+{
+  "job_id": "1ca465e5e7d247fba576aeddf7a72fe9",
+  "status": "completed",
+  "plan": {
+    "intent": "media",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "social_links",
+        "field_type": "string",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "top dog video"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:media",
+      "extract:images",
+      "extract:videos",
+      "extract:social_links",
+      "extract:embeds",
+      "prioritize:rich_media"
+    ],
+    "use_playwright": true,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [],
+  "stats": {
+    "pages_processed": 0,
+    "records_extracted": 0,
+    "failures": 2,
+    "elapsed_ms": 41665
+  },
+  "warnings": [
+    {
+      "code": "SOURCE_PACK_AUGMENTED",
+      "message": "Discovery augmented target URLs with curated source-pack seeds.",
+      "url": null
+    },
+    {
+      "code": "FETCH_FAILED",
+      "message": "Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://triller.co/\nCall log:\n  - navigating to \"https://triller.co/\", waiting until \"networkidle\"\n",
+      "url": "https://triller.co/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://news.ycombinator.com/"
+    },
+    {
+      "code": "DYNAMIC_TIMEOUT",
+      "message": "Dynamic fetch timed out",
+      "url": "https://www.tumblr.com/explore/trending"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://lemmy.world/"
+    },
+    {
+      "code": "NO_RECORDS_EXTRACTED",
+      "message": "No records could be extracted.",
+      "url": null
+    }
+  ],
+  "diagnostics": {
+    "primary_issue": "ROBOTS_BLOCKED",
+    "recommendation": "Most candidate URLs disallowed scraping. Try different source packs or target public hosts that allow robots access.",
+    "warning_counts": {
+      "SOURCE_PACK_AUGMENTED": 1,
+      "FETCH_FAILED": 1,
+      "ROBOTS_BLOCKED": 2,
+      "DYNAMIC_TIMEOUT": 1,
+      "NO_RECORDS_EXTRACTED": 1
+    }
+  }
+}

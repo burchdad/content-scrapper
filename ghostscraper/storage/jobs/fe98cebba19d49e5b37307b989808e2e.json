@@ -1,0 +1,13 @@
+{
+  "job_id": "fe98cebba19d49e5b37307b989808e2e",
+  "status": "running",
+  "plan": {},
+  "records": [],
+  "stats": {
+    "pages_processed": 0,
+    "records_extracted": 0,
+    "failures": 0,
+    "elapsed_ms": 0
+  },
+  "warnings": []
+}

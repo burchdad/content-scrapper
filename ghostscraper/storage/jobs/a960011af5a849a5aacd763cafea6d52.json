@@ -1,0 +1,93 @@
+{
+  "job_id": "a960011af5a849a5aacd763cafea6d52",
+  "status": "completed",
+  "plan": {
+    "intent": "media",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "source_url",
+        "field_type": "string",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "top dog video"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:media",
+      "extract:images",
+      "extract:videos",
+      "extract:social_links",
+      "extract:embeds",
+      "prioritize:rich_media"
+    ],
+    "use_playwright": true,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [],
+  "stats": {
+    "pages_processed": 0,
+    "records_extracted": 0,
+    "failures": 0,
+    "elapsed_ms": 11903
+  },
+  "warnings": [
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.dailymotion.com/video/x9byunq"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.msn.com/en-us/video/animals/incredible-dog-videos-of-the-week-compilation/vi-AA1KjaLe"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.afv.com/funny-dog-videos"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://topdogtips.com/videos/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.deazdoodleranch.com/post/top-10-youtube-videos-for-dogs"
+    },
+    {
+      "code": "NO_RECORDS_EXTRACTED",
+      "message": "No records could be extracted.",
+      "url": null
+    }
+  ],
+  "diagnostics": {
+    "primary_issue": "ROBOTS_BLOCKED",
+    "recommendation": "Most candidate URLs disallowed scraping. Try different source packs or target public hosts that allow robots access.",
+    "warning_counts": {
+      "ROBOTS_BLOCKED": 5,
+      "NO_RECORDS_EXTRACTED": 1
+    }
+  }
+}

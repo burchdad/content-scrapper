@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostRescue AI - Intelligence Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <link rel="stylesheet" href="/static/dashboard.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 8v8l5.5 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>GhostRescue</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" onclick="showSection('overview')" class="nav-item active" data-section="overview">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    </svg>
+                    <span>Overview</span>
+                </a>
+                <a href="#" onclick="showSection('cases')" class="nav-item" data-section="cases">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+                    </svg>
+                    <span>Cases</span>
+                </a>
+                <a href="#" onclick="showSection('alerts')" class="nav-item" data-section="alerts">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                    <span>Alerts</span>
+                </a>
+                <a href="#" onclick="showSection('entities')" class="nav-item" data-section="entities">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Entities</span>
+                </a>
+                <a href="#" onclick="showSection('trust')" class="nav-item" data-section="trust">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                    <span>Trust Settings</span>
+                </a>
+                <a href="#" onclick="showSection('archive')" class="nav-item" data-section="archive">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 6h16v14H4z"></path>
+                        <path d="M9 6V4h6v2"></path>
+                        <path d="M9 12h6"></path>
+                    </svg>
+                    <span>Archive</span>
+                </a>
+                <a href="#" onclick="showSection('staging')" class="nav-item" data-section="staging">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5"></path>
+                        <path d="M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span>Staging Queue</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <div class="avatar">A</div>
+                    <span>Analyst</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <button class="menu-toggle" onclick="toggleSidebar()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                    <h1>Intelligence Dashboard</h1>
+                </div>
+                <div class="header-right">
+                    <div class="header-info">
+                        <span class="status-indicator">● System Online</span>
+                        <time id="current-time"></time>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Sections -->
+            <div class="sections-container">
+
+                <!-- Overview Section -->
+                <section id="overview" class="section active">
+                    <div class="overview-toolbar">
+                        <div>
+                            <p class="overline">Operational Intelligence</p>
+                            <h2 class="overview-title">Threat Detection Command Center</h2>
+                        </div>
+                        <div class="overview-actions">
+                            <div class="namus-search-panel">
+                                <div class="namus-search-row">
+                                    <select id="namus-case-set" class="input-sm" title="Registry type">
+                                        <option value="MissingPersons">Missing Persons</option>
+                                        <option value="UnidentifiedPersons">Unidentified</option>
+                                        <option value="UnclaimedPersons">Unclaimed</option>
+                                    </select>
+                                    <input id="namus-last-name" class="input-sm" type="text" placeholder="Last name" />
+                                    <input id="namus-first-name" class="input-sm" type="text" placeholder="First name" />
+                                    <input id="namus-state" class="input-sm" type="text" placeholder="State" maxlength="30" />
+                                    <input id="namus-case-number" class="input-sm" type="text" placeholder="Case #" maxlength="20" />
+                                    <button class="btn btn-secondary" onclick="importNamUsLeads()" id="namus-import-btn">Import NamUs</button>
+                                    <span id="namus-import-status" class="import-status">Ready</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-secondary" onclick="importNewsApiLeads()" id="newsapi-import-btn">Import News Signals</button>
+                            <span id="newsapi-import-status" class="import-status">Ready</span>
+                            <button class="btn btn-secondary" onclick="importCourtListenerLeads()" id="courtlistener-import-btn">Import CourtListener</button>
+                            <span id="courtlistener-import-status" class="import-status">Ready</span>
+                            <button class="btn btn-secondary" onclick="importFBILeads()" id="fbi-import-btn">Import FBI Wanted</button>
+                            <span id="fbi-import-status" class="import-status">Ready</span>
+                            <button class="btn btn-secondary" onclick="importInterpolLeads()" id="interpol-import-btn">Import Interpol Notices</button>
+                            <span id="interpol-import-status" class="import-status">Ready</span>
+                            <button class="btn btn-secondary" onclick="recomputeAuthorityScores()" id="recompute-authority-btn">Normalize Case Scoring</button>
+                            <span id="recompute-authority-status" class="import-status">Ready</span>
+                            <button class="btn btn-primary" onclick="showSection('cases')">Review Cases</button>
+                        </div>
+                    </div>
+
+                    <div class="info-section" style="margin-top: 10px;">
+                        <h2>Document Intake</h2>
+                        <div class="doc-import-bar">
+                            <input id="doc-import-files" type="file" multiple />
+                            <input id="doc-import-case-id" class="input-sm" type="text" placeholder="Optional Case ID" style="width: 260px;" />
+                            <button class="btn btn-secondary" id="doc-import-btn" onclick="importDocuments()">Import Documents</button>
+                            <span id="doc-import-status" class="import-status">Ready</span>
+                        </div>
+                    </div>
+
+                    <div class="info-section" style="margin-top: 10px;">
+                        <h2>Temporary Investigation Analysis (Drag & Drop)</h2>
+                        <div class="temp-doc-panel">
+                            <div id="temp-dropzone" class="temp-dropzone" onclick="triggerTempFilePicker()">
+                                <p><strong>Drop documents here</strong> or click to select</p>
+                                <p class="temp-subtext">Files are analyzed in-memory and not saved to system records.</p>
+                                <input id="temp-doc-files" type="file" multiple style="display:none;" onchange="handleTempFilesSelected(event)" />
+                            </div>
+                            <div class="temp-doc-controls">
+                                <input id="temp-doc-context" class="input-sm" type="text" placeholder="Optional context (location, lead notes, suspects)" style="width: 420px;" />
+                                <input id="temp-doc-entity-id" class="input-sm" type="text" placeholder="Entity ID for Convert to Case" style="width: 260px;" />
+                                <input id="temp-analyst-id" class="input-sm" type="text" placeholder="Analyst ID (required for sensitive mode)" style="width: 260px;" />
+                                <select id="temp-analyst-role" class="input-sm" style="width: 220px;">
+                                    <option value="">Analyst Role</option>
+                                    <option value="junior_analyst">Junior Analyst</option>
+                                    <option value="senior_analyst">Senior Analyst</option>
+                                    <option value="trusted_operator">Trusted Operator</option>
+                                </select>
+                                <label style="display:flex;align-items:center;gap:6px;color:var(--text-secondary);font-size:12px;">
+                                    <input id="temp-sensitive-mode" type="checkbox" />
+                                    Sensitive Investigation Mode
+                                </label>
+                                <button class="btn btn-secondary" id="temp-doc-analyze-btn" onclick="analyzeTempDocuments()">Analyze Temporarily</button>
+                                <button class="btn btn-primary" id="temp-doc-convert-btn" onclick="convertTempDocumentsToCase()">Convert to Case</button>
+                                <span id="temp-doc-status" class="import-status">Ready</span>
+                            </div>
+                            <div id="temp-doc-list" class="temp-doc-list"></div>
+                            <div id="temp-session-meta" class="temp-doc-list"></div>
+                            <div id="temp-doc-report" class="temp-doc-report"></div>
+                            <div class="temp-chat-panel">
+                                <h3>Secure Investigation Chat (Temporary)</h3>
+                                <p class="temp-subtext">Conversation is temporary and not persisted. Configure investigation access key for protected use.</p>
+                                <div class="temp-doc-controls">
+                                    <input id="temp-chat-access-key" class="input-sm" type="password" placeholder="Investigation access key" style="width: 260px;" />
+                                </div>
+                                <div id="temp-chat-transcript" class="temp-chat-transcript"></div>
+                                <div class="temp-doc-controls">
+                                    <input id="temp-chat-input" class="input-sm" type="text" placeholder="Ask about leads, persons of interest, timelines, or next investigative steps" style="width: 640px;" />
+                                    <button class="btn btn-secondary" id="temp-chat-send-btn" onclick="sendTemporaryChatMessage()">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stats Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">👥</div>
+                            <div class="stat-content">
+                                <div class="stat-label">Total Entities</div>
+                                <div class="stat-value" id="stat-entities">0</div>
+                                <div class="stat-trend positive">Growing intelligence graph</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">📋</div>
+                            <div class="stat-content">
+                                <div class="stat-label">Active Cases</div>
+                                <div class="stat-value" id="stat-cases">0</div>
+                                <div class="stat-trend neutral">Live operational queue</div>
+                            </div>
+                        </div>
+                        <div class="stat-card critical">
+                            <div class="stat-icon">⚠️</div>
+                            <div class="stat-content">
+                                <div class="stat-label">Unacknowledged Alerts</div>
+                                <div class="stat-value" id="stat-alerts">0</div>
+                                <div class="stat-trend warning">Requires analyst attention</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🎯</div>
+                            <div class="stat-content">
+                                <div class="stat-label">System Confidence</div>
+                                <div class="stat-value" id="stat-confidence">-</div>
+                                <div class="stat-trend positive">Model calibration stable</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Charts Row -->
+                    <div class="charts-row">
+                        <div class="card">
+                            <div class="card-header">Risk Distribution</div>
+                            <canvas id="risk-chart" height="300"></canvas>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Signal Types Detected</div>
+                            <canvas id="signals-chart" height="300"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Recent Items -->
+                    <div class="info-section">
+                        <h2>Recent Critical Cases</h2>
+                        <div class="table-container">
+                            <table id="recent-cases-table">
+                                <thead>
+                                    <tr>
+                                        <th>Case ID</th>
+                                        <th>Status</th>
+                                        <th>Risk Score</th>
+                                        <th>Confidence</th>
+                                        <th>Created</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="loading">
+                                        <td colspan="6">Loading...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h2>Cross-Source Link Candidates</h2>
+                        <div class="table-container">
+                            <table id="cross-source-links-table">
+                                <thead>
+                                    <tr>
+                                        <th>Anchor</th>
+                                        <th>Target</th>
+                                        <th>Reasons</th>
+                                        <th>Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="loading">
+                                        <td colspan="4">Loading cross-source candidates...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cases Section -->
+                <section id="cases" class="section">
+                    <div class="section-header">
+                        <h2>Case Management</h2>
+                        <div class="search-bar">
+                            <input type="text" id="case-search" placeholder="Search cases..." onkeyup="filterCases()">
+                        </div>
+                    </div>
+
+                    <div class="filter-bar">
+                        <label>
+                            Status:
+                            <select id="case-status-filter" onchange="filterCases()">
+                                <option value="">All</option>
+                                <option value="open">Open</option>
+                                <option value="under_review">Under Review</option>
+                                <option value="escalated">Escalated</option>
+                                <option value="closed">Closed</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="table-container">
+                        <table id="cases-table">
+                            <thead>
+                                <tr>
+                                    <th>Case ID</th>
+                                    <th>Status</th>
+                                    <th>Risk</th>
+                                    <th>Priority</th>
+                                    <th>Confidence</th>
+                                    <th>Entities</th>
+                                    <th>Signals</th>
+                                    <th>Created</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="loading">
+                                    <td colspan="9">Loading cases...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Case Detail Modal -->
+                    <div id="case-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeCaseModal()">&times;</span>
+                            <div id="case-detail-content">
+                                <!-- Populated by JS -->
+                            </div>
+                            <div class="modal-tabs">
+                                <button onclick="showCaseTab('summary', this)" class="tab-button active" data-tab="summary">Summary</button>
+                                <button onclick="showCaseTab('explainability', this)" class="tab-button" data-tab="explainability">Explainability</button>
+                                <button onclick="showCaseTab('feedback', this)" class="tab-button" data-tab="feedback">Feedback</button>
+                                <button onclick="showCaseTab('files', this)" class="tab-button" data-tab="files">Files</button>
+                            </div>
+                            <div id="case-summary-tab" class="tab-content active">
+                                <!-- Populated by JS -->
+                            </div>
+                            <div id="case-explainability-tab" class="tab-content">
+                                <!-- Explainability content -->
+                            </div>
+                            <div id="case-feedback-tab" class="tab-content">
+                                <!-- Feedback content -->
+                            </div>
+                            <div id="case-files-tab" class="tab-content">
+                                <!-- Files content -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Alerts Section -->
+                <section id="alerts" class="section">
+                    <div class="section-header">
+                        <h2>Alerts</h2>
+                    </div>
+
+                    <div class="tab-kpi-row" id="alerts-kpis">
+                        <div class="stat-mini"><div class="label">Total Alerts</div><div class="value" id="alerts-total">0</div></div>
+                        <div class="stat-mini"><div class="label">Unacknowledged</div><div class="value" id="alerts-pending">0</div></div>
+                        <div class="stat-mini"><div class="label">Critical/High</div><div class="value" id="alerts-high">0</div></div>
+                    </div>
+
+                    <div class="filter-bar">
+                        <label>
+                            Severity:
+                            <select id="alert-severity-filter" onchange="filterAlerts()">
+                                <option value="">All</option>
+                                <option value="critical">Critical</option>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="alert-unacknowledged-only" onchange="filterAlerts()"> Show unacknowledged only
+                        </label>
+                    </div>
+
+                    <div class="table-container">
+                        <table id="alerts-table">
+                            <thead>
+                                <tr>
+                                    <th>Alert ID</th>
+                                    <th>Severity</th>
+                                    <th>Message</th>
+                                    <th>Case</th>
+                                    <th>Triggered</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="loading">
+                                    <td colspan="7">Loading alerts...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Entities Section -->
+                <section id="entities" class="section">
+                    <div class="section-header">
+                        <h2>Entity Registry</h2>
+                        <div class="search-bar">
+                            <input type="text" id="entity-search" placeholder="Search entities..." onkeyup="searchEntities()">
+                        </div>
+                    </div>
+
+                    <div class="tab-kpi-row" id="entities-kpis">
+                        <div class="stat-mini"><div class="label">Total Entities</div><div class="value" id="entities-total">0</div></div>
+                        <div class="stat-mini"><div class="label">Avg Confidence</div><div class="value" id="entities-avg-conf">0.000</div></div>
+                        <div class="stat-mini"><div class="label">High Confidence (≥0.8)</div><div class="value" id="entities-high-conf">0</div></div>
+                    </div>
+
+                    <div class="filter-bar">
+                        <label>
+                            <input type="checkbox" id="entity-reference-only" onchange="loadEntitiesData()"> Reference data only
+                        </label>
+                        <label>
+                            Source:
+                            <select id="entity-reference-source" onchange="loadEntitiesData()">
+                                <option value="">All</option>
+                                <option value="NamUs">NamUs only</option>
+                                <option value="Interpol">Interpol only</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="table-container">
+                        <table id="entities-table">
+                            <thead>
+                                <tr>
+                                    <th>Entity ID</th>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Confidence</th>
+                                    <th>Sources</th>
+                                    <th>Created</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="loading">
+                                    <td colspan="7">Loading entities...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Trust Settings Section -->
+                <section id="trust" class="section">
+                    <div class="section-header">
+                        <h2>Trust & Governance</h2>
+                    </div>
+
+                    <div class="trust-tab-strip">
+                        <button class="trust-tab-btn active" data-trust-tab="governance" onclick="showTrustTab('governance', this)">Governance</button>
+                        <button class="trust-tab-btn" data-trust-tab="feedback" onclick="showTrustTab('feedback', this)">Feedback</button>
+                        <button class="trust-tab-btn" data-trust-tab="telemetry" onclick="showTrustTab('telemetry', this)">Decision Telemetry</button>
+                    </div>
+
+                    <div id="trust-tab-governance" class="trust-tab-panel active">
+                        <div class="card">
+                            <div class="card-header">Risk Thresholds Configuration</div>
+                            <div class="form-group">
+                                <label>Medium Risk Threshold</label>
+                                <input type="number" id="threshold-medium" min="0" max="100" placeholder="45">
+                                <small>Cases with risk ≥ this value are classified as medium</small>
+                            </div>
+                            <div class="form-group">
+                                <label>High Risk Threshold</label>
+                                <input type="number" id="threshold-high" min="0" max="100" placeholder="65">
+                                <small>Cases with risk ≥ this value are classified as high</small>
+                            </div>
+                            <div class="form-group">
+                                <label>Critical Risk Threshold</label>
+                                <input type="number" id="threshold-critical" min="0" max="100" placeholder="80">
+                                <small>Cases with risk ≥ this value trigger immediate escalation</small>
+                            </div>
+                            <div class="form-group">
+                                <label>False Positive Penalty</label>
+                                <input type="number" id="penalty-fp" min="0" max="1" step="0.01" placeholder="0.1">
+                                <small>Adaptive penalty calibrated based on analyst feedback</small>
+                            </div>
+                            <button onclick="saveTrustConfig()" class="btn btn-primary">Save Configuration</button>
+                        </div>
+                    </div>
+
+                    <div id="trust-tab-feedback" class="trust-tab-panel">
+                        <div class="card">
+                            <div class="card-header">Feedback & Calibration</div>
+                            <div id="feedback-stats">
+                                <div class="stat-mini">
+                                    <div class="label">Total Feedback</div>
+                                    <div class="value" id="fb-total">0</div>
+                                </div>
+                                <div class="stat-mini">
+                                    <div class="label">False Positive Rate</div>
+                                    <div class="value" id="fb-fp-rate">0%</div>
+                                </div>
+                                <div class="stat-mini">
+                                    <div class="label">Adaptive Penalty</div>
+                                    <div class="value" id="fb-penalty">0.0</div>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 24px;">
+                                <h3>Recent Feedback Entries</h3>
+                                <table id="feedback-table" style="margin-top: 12px;">
+                                    <thead>
+                                        <tr>
+                                            <th>Case ID</th>
+                                            <th>Analyst</th>
+                                            <th>Type</th>
+                                            <th>Corrected Score</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="loading">
+                                            <td colspan="5">Loading feedback...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="trust-tab-telemetry" class="trust-tab-panel">
+                        <div class="card telemetry-card">
+                            <div class="card-header">Analyst Decision Telemetry <button class="btn btn-secondary btn-small" style="float:right" onclick="loadDecisionTelemetry()">Refresh</button></div>
+                            <div id="decision-telemetry-content" class="telemetry-content">
+                                <div class="telemetry-empty">Select Refresh to load telemetry.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Archive Section -->
+                <section id="archive" class="section">
+                    <div class="section-header">
+                        <h2>Tier 4 Archive & Verification</h2>
+                        <div style="display:flex;gap:10px;align-items:center;">
+                            <input type="date" id="archive-date-filter" class="input-sm" style="width:160px;">
+                            <input type="text" id="archive-case-filter" class="input-sm" style="width:260px;" placeholder="Case ID" />
+                            <button class="btn btn-secondary" onclick="loadArchiveData()">Refresh</button>
+                        </div>
+                    </div>
+
+                    <div class="archive-kpis">
+                        <div class="stat-mini"><div class="label">Archive Records</div><div class="value" id="archive-total">0</div></div>
+                        <div class="stat-mini"><div class="label">Integrity Valid</div><div class="value" id="archive-valid">0</div></div>
+                        <div class="stat-mini"><div class="label">Last Verified Case</div><div class="value" id="archive-last-case" style="font-size:16px;">-</div></div>
+                    </div>
+
+                    <div class="table-container">
+                        <table id="archive-table">
+                            <thead>
+                                <tr>
+                                    <th>Case ID</th>
+                                    <th>Date</th>
+                                    <th>Archived At</th>
+                                    <th>Integrity</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="loading">
+                                    <td colspan="5">Loading archive...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Staging Queue Section -->
+                <section id="staging" class="section">
+                    <div class="section-header">
+                        <h2>Staging Queue — Source Validation Gate</h2>
+                        <div style="display:flex;gap:8px;align-items:center;">
+                            <select id="staging-status-filter" onchange="loadStagingQueue()" class="input-sm">
+                                <option value="pending">Pending Review</option>
+                                <option value="approved">Approved</option>
+                                <option value="rejected">Rejected</option>
+                            </select>
+                            <button class="btn btn-secondary" onclick="loadStagingQueue()">Refresh</button>
+                            <button class="btn btn-secondary" onclick="loadSourceRegistry()">View Source Registry</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-kpi-row" id="staging-kpis">
+                        <div class="stat-mini"><div class="label">Pending</div><div class="value" id="staging-pending-count">0</div></div>
+                        <div class="stat-mini"><div class="label">Approved</div><div class="value" id="staging-approved-count">0</div></div>
+                        <div class="stat-mini"><div class="label">Rejected</div><div class="value" id="staging-rejected-count">0</div></div>
+                    </div>
+
+                    <div class="card" style="margin-bottom:16px;padding:14px 18px;">
+                        <div style="font-size:13px;color:#94a3b8;line-height:1.6;">
+                            <strong style="color:#e2e8f0;">Architecture:</strong>
+                            GhostScraper discovers → submits here →
+                            analyst approves / rejects → approved signals enter GhostRescue scoring.
+                            Low-trust signals are capped to ≤20% influence until promoted.
+                        </div>
+                        <div id="staging-summary" style="margin-top:10px;font-size:13px;"></div>
+                    </div>
+
+                    <div class="table-container">
+                        <table id="staging-table">
+                            <thead>
+                                <tr>
+                                    <th>Staged ID</th>
+                                    <th>Source</th>
+                                    <th>Trust Level</th>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Confidence</th>
+                                    <th>Status</th>
+                                    <th>Submitted</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="staging-table-body">
+                                <tr class="loading">
+                                    <td colspan="9">Loading staging queue...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Source Registry Panel -->
+                    <div id="source-registry-panel" style="display:none;margin-top:24px;">
+                        <div class="card-header" style="margin-bottom:12px;">Approved Source Registry</div>
+                        <div id="source-registry-content"></div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/dashboard.js"></script>
+</body>
+</html>

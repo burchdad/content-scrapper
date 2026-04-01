@@ -1,0 +1,31 @@
+{
+  "source": "NamUs manual export sample",
+  "records": [
+    {
+      "namus_case": "MP-100001",
+      "first_name": "Jane",
+      "last_name": "Example",
+      "alias": "Janie",
+      "age": 24,
+      "sex": "female",
+      "last_contact_date": "2026-02-11",
+      "last_city": "Houston",
+      "last_state": "TX",
+      "circumstances": "Last seen leaving work with unknown recruiter offering transport to another state.",
+      "source_url": "https://www.namus.gov/MissingPersons/Search"
+    },
+    {
+      "namus_case": "MP-100002",
+      "first_name": "Daniel",
+      "last_name": "Example",
+      "alias": "Danny",
+      "age": 19,
+      "sex": "male",
+      "last_contact_date": "2026-01-29",
+      "last_city": "Phoenix",
+      "last_state": "AZ",
+      "circumstances": "Reported missing after online job placement conversation and bus transfer arrangement.",
+      "source_url": "https://www.namus.gov/MissingPersons/Search"
+    }
+  ]
+}

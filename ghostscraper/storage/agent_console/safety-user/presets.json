@@ -1,0 +1,222 @@
+[
+  {
+    "preset_id": "de1d38bc909f4c5f842cfdeb32f949b0",
+    "user_id": "safety-user",
+    "name": "Safety Monitoring Preset",
+    "request": {
+      "query": "monitor grooming language in public comments",
+      "websites": null,
+      "source_pack_ids": [
+        "social-discussion",
+        "short-video-viral",
+        "livestream-clips"
+      ],
+      "output_format": "json",
+      "mode": "auto",
+      "max_pages": 10,
+      "max_depth": 1,
+      "include_images": true,
+      "include_videos": true,
+      "include_mature_content": true,
+      "download_images": false,
+      "image_limit_per_record": 20,
+      "video_limit_per_record": 20,
+      "paginate": true,
+      "follow_internal_links": false,
+      "use_search_discovery": true,
+      "allowed_domains": null,
+      "blocked_domains": null,
+      "desired_fields": [
+        "title",
+        "source_url",
+        "social_links",
+        "hashtags",
+        "image_urls",
+        "video_urls"
+      ],
+      "custom_schema": null,
+      "timeout_seconds": 30,
+      "retries": 2,
+      "respect_robots_txt": true,
+      "user_agent": null
+    },
+    "created_at": "2026-03-30T02:53:06.166084Z",
+    "updated_at": "2026-03-30T02:53:06.166084Z"
+  },
+  {
+    "preset_id": "83c9750424e34f4bbe54f0b3ca784c88",
+    "user_id": "safety-user",
+    "name": "Safety Monitoring Preset",
+    "request": {
+      "query": "monitor grooming language in public comments",
+      "websites": null,
+      "source_pack_ids": [
+        "social-discussion",
+        "short-video-viral",
+        "livestream-clips"
+      ],
+      "output_format": "json",
+      "mode": "auto",
+      "max_pages": 10,
+      "max_depth": 1,
+      "include_images": true,
+      "include_videos": true,
+      "include_mature_content": true,
+      "download_images": false,
+      "image_limit_per_record": 20,
+      "video_limit_per_record": 20,
+      "paginate": true,
+      "follow_internal_links": false,
+      "use_search_discovery": true,
+      "allowed_domains": null,
+      "blocked_domains": null,
+      "desired_fields": [
+        "title",
+        "source_url",
+        "social_links",
+        "hashtags",
+        "image_urls",
+        "video_urls"
+      ],
+      "custom_schema": null,
+      "timeout_seconds": 30,
+      "retries": 2,
+      "respect_robots_txt": true,
+      "user_agent": null
+    },
+    "created_at": "2026-03-30T02:58:47.063776Z",
+    "updated_at": "2026-03-30T02:58:47.063776Z"
+  },
+  {
+    "preset_id": "b61390f93baa47499d648edf958f94e2",
+    "user_id": "safety-user",
+    "name": "Safety Monitoring Preset",
+    "request": {
+      "query": "monitor grooming language in public comments",
+      "websites": null,
+      "source_pack_ids": [
+        "social-discussion",
+        "short-video-viral",
+        "livestream-clips"
+      ],
+      "output_format": "json",
+      "mode": "auto",
+      "max_pages": 10,
+      "max_depth": 1,
+      "include_images": true,
+      "include_videos": true,
+      "include_mature_content": true,
+      "download_images": false,
+      "image_limit_per_record": 20,
+      "video_limit_per_record": 20,
+      "paginate": true,
+      "follow_internal_links": false,
+      "use_search_discovery": true,
+      "allowed_domains": null,
+      "blocked_domains": null,
+      "desired_fields": [
+        "title",
+        "source_url",
+        "social_links",
+        "hashtags",
+        "image_urls",
+        "video_urls"
+      ],
+      "custom_schema": null,
+      "timeout_seconds": 30,
+      "retries": 2,
+      "respect_robots_txt": true,
+      "user_agent": null
+    },
+    "created_at": "2026-03-30T03:23:00.530587Z",
+    "updated_at": "2026-03-30T03:23:00.530587Z"
+  },
+  {
+    "preset_id": "8800810830074a0f878ce4d1c945a105",
+    "user_id": "safety-user",
+    "name": "Safety Monitoring Preset",
+    "request": {
+      "query": "monitor grooming language in public comments",
+      "websites": null,
+      "source_pack_ids": [
+        "social-discussion",
+        "short-video-viral",
+        "livestream-clips"
+      ],
+      "output_format": "json",
+      "mode": "auto",
+      "max_pages": 10,
+      "max_depth": 1,
+      "include_images": true,
+      "include_videos": true,
+      "include_mature_content": true,
+      "download_images": false,
+      "image_limit_per_record": 20,
+      "video_limit_per_record": 20,
+      "paginate": true,
+      "follow_internal_links": false,
+      "use_search_discovery": true,
+      "allowed_domains": null,
+      "blocked_domains": null,
+      "desired_fields": [
+        "title",
+        "source_url",
+        "social_links",
+        "hashtags",
+        "image_urls",
+        "video_urls"
+      ],
+      "custom_schema": null,
+      "timeout_seconds": 30,
+      "retries": 2,
+      "respect_robots_txt": true,
+      "user_agent": null
+    },
+    "created_at": "2026-03-30T03:41:18.336388Z",
+    "updated_at": "2026-03-30T03:41:18.336388Z"
+  },
+  {
+    "preset_id": "9f13e8612f3d45f6a7aeb85b95bc0f27",
+    "user_id": "safety-user",
+    "name": "Safety Monitoring Preset",
+    "request": {
+      "query": "monitor grooming language in public comments",
+      "websites": null,
+      "source_pack_ids": [
+        "social-discussion",
+        "short-video-viral",
+        "livestream-clips"
+      ],
+      "output_format": "json",
+      "mode": "auto",
+      "max_pages": 10,
+      "max_depth": 1,
+      "include_images": true,
+      "include_videos": true,
+      "include_mature_content": true,
+      "download_images": false,
+      "image_limit_per_record": 20,
+      "video_limit_per_record": 20,
+      "paginate": true,
+      "follow_internal_links": false,
+      "use_search_discovery": true,
+      "allowed_domains": null,
+      "blocked_domains": null,
+      "desired_fields": [
+        "title",
+        "source_url",
+        "social_links",
+        "hashtags",
+        "image_urls",
+        "video_urls"
+      ],
+      "custom_schema": null,
+      "timeout_seconds": 30,
+      "retries": 2,
+      "respect_robots_txt": true,
+      "user_agent": null
+    },
+    "created_at": "2026-03-30T03:49:36.412714Z",
+    "updated_at": "2026-03-30T03:49:36.412714Z"
+  }
+]

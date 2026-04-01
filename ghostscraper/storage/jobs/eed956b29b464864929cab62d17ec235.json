@@ -1,0 +1,110 @@
+{
+  "job_id": "eed956b29b464864929cab62d17ec235",
+  "status": "completed",
+  "plan": {
+    "intent": "generic",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "description",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "image_list",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "social_links",
+        "field_type": "array",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "boobs"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:generic",
+      "extract:images",
+      "extract:videos"
+    ],
+    "use_playwright": false,
+    "paginate": true,
+    "click_galleries": false,
+    "capture_images": true
+  },
+  "records": [],
+  "stats": {
+    "pages_processed": 0,
+    "records_extracted": 0,
+    "failures": 0,
+    "elapsed_ms": 2260
+  },
+  "warnings": [
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.reddit.com/r/Boobs________/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.reddit.com/r/Gifs_boobs/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.reddit.com/r/BiggerThanYouThought/comments/bnnddi/towel_drop/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.reddit.com/r/Teenbigboobs/top/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/yk4599/ai_boobs_and_representation_a_refreshingly/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.reddit.com/r/NoStupidQuestions/comments/1cldqod/what_is_it_actually_like_to_have_boobs/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.reddit.com/r/fightporn/comments/q18o79/boobs/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.reddit.com/r/beauty/comments/sdctoe/hairy_boobs/"
+    },
+    {
+      "code": "NO_RECORDS_EXTRACTED",
+      "message": "No records could be extracted.",
+      "url": null
+    }
+  ],
+  "diagnostics": {
+    "primary_issue": "ROBOTS_BLOCKED",
+    "recommendation": "Most candidate URLs disallowed scraping. Try different source packs or target public hosts that allow robots access.",
+    "warning_counts": {
+      "ROBOTS_BLOCKED": 8,
+      "NO_RECORDS_EXTRACTED": 1
+    }
+  }
+}

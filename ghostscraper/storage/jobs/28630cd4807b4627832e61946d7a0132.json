@@ -1,0 +1,120 @@
+{
+  "job_id": "28630cd4807b4627832e61946d7a0132",
+  "status": "completed",
+  "plan": {
+    "intent": "media",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "source_url",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "embed_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "hashtags",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "social_links",
+        "field_type": "string",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "Pull recent short-form videos, reels, memes, and gifs about entrepreneurship and money mindset from TikTok, YouTube Shorts, Instagram Reels, Tenor, and Giphy"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:media",
+      "extract:images",
+      "extract:videos",
+      "extract:social_links",
+      "extract:embeds",
+      "prioritize:rich_media"
+    ],
+    "use_playwright": true,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [],
+  "stats": {
+    "pages_processed": 0,
+    "records_extracted": 0,
+    "failures": 1,
+    "elapsed_ms": 8050
+  },
+  "warnings": [
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://video.search.yahoo.com/search/video;_ylt=Awr.0UQrYslpPQIAKlJXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Nj?p=site%3Ayoutube.com+shorts+Pull+recent+short-form+videos%2C+reels%2C+memes%2C+and+gifs+about+entrepreneurship+and+money+mindset+from+TikTok%2C+YouTube+Shorts%2C+Instagram+Reels%2C+Tenor%2C+and+Giphy"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.merriam-webster.com/dictionary/pull"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.collinsdictionary.com/us/dictionary/english/pull"
+    },
+    {
+      "code": "FETCH_FAILED",
+      "message": "BrowserType.launch: Executable doesn't exist at /home/codespace/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+      "url": "https://dictionary.cambridge.org/dictionary/english/pull"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.dictionary.com/browse/pull"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.pullapart.com/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.thefreedictionary.com/pull"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.wordreference.com/definition/pull"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.vocabulary.com/dictionary/pull"
+    },
+    {
+      "code": "NO_RECORDS_EXTRACTED",
+      "message": "No records could be extracted.",
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+[
+  {
+    "entity_id": "2024/18432",
+    "forename": "VICTOR",
+    "name": "OKAFOR",
+    "date_of_birth": "1984/07/14",
+    "sex_id": "M",
+    "nationalities": ["NG", "IT"],
+    "country_of_birth_id": "NG",
+    "arrest_warrants": [
+      {
+        "charge": "Human trafficking, sexual exploitation, operating transnational criminal organization",
+        "charge_translation": "Human trafficking, sexual exploitation, operating transnational criminal organization",
+        "issuing_country_id": "IT"
+      }
+    ],
+    "languages_spoken_ids": ["ENG", "ITA", "YOR"],
+    "weight": 82,
+    "height": 178,
+    "distinguishing_marks": "Tribal scar marks on left cheek",
+    "_links": {
+      "self": {"href": "https://ws-public.interpol.int/notices/v1/red/2024-18432"},
+      "thumbnail": {"href": ""}
+    }
+  },
+  {
+    "entity_id": "2023/09171",
+    "forename": "ELENA",
+    "name": "MARCHETTI",
+    "date_of_birth": "1991/03/29",
+    "sex_id": "F",
+    "nationalities": ["RO"],
+    "country_of_birth_id": "RO",
+    "arrest_warrants": [
+      {
+        "charge": "Trafficking in human beings",
+        "charge_translation": "Trafficking in human beings",
+        "issuing_country_id": "DE"
+      },
+      {
+        "charge": "Money laundering, document forgery",
+        "charge_translation": "Money laundering, document forgery",
+        "issuing_country_id": "RO"
+      }
+    ],
+    "languages_spoken_ids": ["RON", "DEU", "ENG"],
+    "weight": 58,
+    "height": 165,
+    "distinguishing_marks": "Tattoo — rose motif, left forearm",
+    "_links": {
+      "self": {"href": "https://ws-public.interpol.int/notices/v1/red/2023-09171"},
+      "thumbnail": {"href": ""}
+    }
+  },
+  {
+    "entity_id": "2024/05560",
+    "forename": "RAMIRO",
+    "name": "DELGADO FUENTES",
+    "date_of_birth": "1979/11/02",
+    "sex_id": "M",
+    "nationalities": ["MX"],
+    "country_of_birth_id": "MX",
+    "arrest_warrants": [
+      {
+        "charge": "Sex trafficking of minors, organized crime, bribery of public officials",
+        "charge_translation": "Sex trafficking of minors, organized crime, bribery of public officials",
+        "issuing_country_id": "MX"
+      }
+    ],
+    "languages_spoken_ids": ["SPA", "ENG"],
+    "weight": 91,
+    "height": 174,
+    "distinguishing_marks": "Scar on right hand, multiple tattoos on both arms",
+    "_links": {
+      "self": {"href": "https://ws-public.interpol.int/notices/v1/red/2024-05560"},
+      "thumbnail": {"href": ""}
+    }
+  },
+  {
+    "entity_id": "2024/22015",
+    "forename": "MINH",
+    "name": "NGUYEN",
+    "date_of_birth": "1988/09/17",
+    "sex_id": "M",
+    "nationalities": ["VN"],
+    "country_of_birth_id": "VN",
+    "arrest_warrants": [
+      {
+        "charge": "Labour trafficking, forced criminality, unlawful deprivation of liberty",
+        "charge_translation": "Labour trafficking, forced criminality, unlawful deprivation of liberty",
+        "issuing_country_id": "GB"
+      }
+    ],
+    "languages_spoken_ids": ["VIE", "ENG", "ZHO"],
+    "weight": 68,
+    "height": 169,
+    "distinguishing_marks": "Missing tip of left index finger",
+    "_links": {
+      "self": {"href": "https://ws-public.interpol.int/notices/v1/red/2024-22015"},
+      "thumbnail": {"href": ""}
+    }
+  },
+  {
+    "entity_id": "2023/31887",
+    "forename": "ABEBE",
+    "name": "TEKLE",
+    "date_of_birth": "1976/05/08",
+    "sex_id": "M",
+    "nationalities": ["ET"],
+    "country_of_birth_id": "ET",
+    "arrest_warrants": [
+      {
+        "charge": "Human trafficking, people smuggling, extortion",
+        "charge_translation": "Human trafficking, people smuggling, extortion",
+        "issuing_country_id": "ET"
+      }
+    ],
+    "languages_spoken_ids": ["AMH", "ARA", "ENG"],
+    "weight": 74,
+    "height": 176,
+    "distinguishing_marks": "Circular burn scar on right forearm",
+    "_links": {
+      "self": {"href": "https://ws-public.interpol.int/notices/v1/red/2023-31887"},
+      "thumbnail": {"href": ""}
+    }
+  }
+]

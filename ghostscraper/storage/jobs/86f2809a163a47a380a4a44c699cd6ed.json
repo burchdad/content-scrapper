@@ -1,0 +1,102 @@
+{
+  "job_id": "86f2809a163a47a380a4a44c699cd6ed",
+  "status": "completed",
+  "plan": {
+    "intent": "generic",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "description",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "image_list",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "social_links",
+        "field_type": "array",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "top 10 trends"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:generic",
+      "extract:images",
+      "extract:videos"
+    ],
+    "use_playwright": false,
+    "paginate": true,
+    "click_galleries": false,
+    "capture_images": true
+  },
+  "records": [],
+  "stats": {
+    "pages_processed": 0,
+    "records_extracted": 0,
+    "failures": 1,
+    "elapsed_ms": 34118
+  },
+  "warnings": [
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://tophat.com/students/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://app.tophat.com/register/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://app-ca.tophat.com/login?redirect=48"
+    },
+    {
+      "code": "FETCH_FAILED",
+      "message": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)",
+      "url": "https://success.tophat.com/login"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://tophat.com/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://app.tophat.com/register/student"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://app.tophat.com/register/student/confirm-email?skip_finish=true"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://app.tophat.com/access/"
+    },
+    {
+      "code": "NO_RECORDS_EXTRACTED",
+      "message": "No records could be extracted.",
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "job_id": "fe716abfa6e04286976b2dda369f2a79",
+  "status": "completed",
+  "plan": {
+    "intent": "real_estate",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "address",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "city",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "state",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "price",
+        "field_type": "number",
+        "required": false
+      },
+      {
+        "name": "beds",
+        "field_type": "number",
+        "required": false
+      },
+      {
+        "name": "baths",
+        "field_type": "number",
+        "required": false
+      },
+      {
+        "name": "sqft",
+        "field_type": "number",
+        "required": false
+      },
+      {
+        "name": "description",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "image_list",
+        "required": false
+      },
+      {
+        "name": "listing_agent",
+        "field_type": "string",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "find real estate listing details and photos"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:real_estate",
+      "extract:images",
+      "extract:price",
+      "extract:beds_baths_sqft",
+      "prioritize:galleries"
+    ],
+    "use_playwright": true,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [],
+  "stats": {
+    "pages_processed": 0,
+    "records_extracted": 0,
+    "failures": 1,
+    "elapsed_ms": 0
+  },
+  "warnings": [
+    {
+      "code": "FETCH_FAILED",
+      "message": "not expected",
+      "url": "https://listing.example.com/home/123"
+    },
+    {
+      "code": "NO_RECORDS_EXTRACTED",
+      "message": "No records could be extracted.",
+      "url": null
+    }
+  ]
+}

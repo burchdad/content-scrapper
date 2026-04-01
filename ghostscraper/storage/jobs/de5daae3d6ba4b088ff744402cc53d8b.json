@@ -1,0 +1,105 @@
+{
+  "job_id": "de5daae3d6ba4b088ff744402cc53d8b",
+  "status": "completed",
+  "plan": {
+    "intent": "media",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": true
+      },
+      {
+        "name": "description",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "image_list",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "audio_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "embed_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "social_links",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "hashtags",
+        "field_type": "array",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "pull all images, videos, and social media assets for this creator campaign"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:media",
+      "extract:images",
+      "extract:videos",
+      "extract:social_links",
+      "extract:embeds",
+      "prioritize:rich_media"
+    ],
+    "use_playwright": false,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [
+    {
+      "source_url": "https://triller.co/",
+      "canonical_url": null,
+      "record_type": "media",
+      "title": "123 Main St Listing",
+      "data": {
+        "title": "123 Main St Listing",
+        "business_name": "123 Main St Listing",
+        "email": [],
+        "phone": [],
+        "social_links": []
+      },
+      "images": [
+        "https://triller.co/images/kitchen.jpg",
+        "https://triller.co/images/exterior.webp",
+        "https://listing.example.com/hero.jpg"
+      ],
+      "videos": [],
+      "downloaded_images": [],
+      "confidence": 0.7,
+      "extraction_notes": [
+        "contact_extraction_completed"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_processed": 1,
+    "records_extracted": 1,
+    "failures": 0,
+    "elapsed_ms": 4
+  },
+  "warnings": [
+    {
+      "code": "SOURCE_PACK_AUGMENTED",
+      "message": "Discovery augmented target URLs with curated source-pack seeds.",
+      "url": null
+    }
+  ]
+}

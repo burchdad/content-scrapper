@@ -1,0 +1,35 @@
+{
+  "source": "NCMEC sample export",
+  "persons": [
+    {
+      "caseNumber": "NCMC-EX-1001",
+      "firstName": "Avery",
+      "middleName": "J",
+      "lastName": "Sample",
+      "missingCity": "Phoenix",
+      "missingState": "AZ",
+      "missingCountry": "US",
+      "missingDate": "2025-11-14",
+      "age": "15",
+      "caseType": "endangered_runaway",
+      "race": "Unknown",
+      "thumbnailUrl": "/photographs/NCMCEX1001a1t.jpg",
+      "imageUrl": "/photographs/NCMCEX1001a1.jpg"
+    },
+    {
+      "caseNumber": "NCMC-EX-1002",
+      "firstName": "Jordan",
+      "middleName": "",
+      "lastName": "Sample",
+      "missingCity": "Houston",
+      "missingState": "TX",
+      "missingCountry": "US",
+      "missingDate": "2025-12-01",
+      "age": "13",
+      "caseType": "endangered_missing",
+      "race": "Unknown",
+      "thumbnailUrl": "/photographs/NCMCEX1002a1t.jpg",
+      "imageUrl": "/photographs/NCMCEX1002a1.jpg"
+    }
+  ]
+}

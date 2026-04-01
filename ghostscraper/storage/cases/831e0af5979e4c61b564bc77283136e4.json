@@ -1,0 +1,13 @@
+{
+  "case_id": "831e0af5979e4c61b564bc77283136e4",
+  "status": "open",
+  "job_id": "571909bba5d74d209a407c20bdd39550",
+  "title": "Band check",
+  "notes": null,
+  "created_at": "2026-03-30T02:53:23.843659Z",
+  "total_records_evaluated": 2,
+  "flagged_records_count": 0,
+  "average_risk_score": 0.0,
+  "highest_risk_band": "low",
+  "records": []
+}

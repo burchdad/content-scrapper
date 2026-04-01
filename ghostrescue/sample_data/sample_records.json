@@ -1,0 +1,36 @@
+{
+  "description": "Synthetic test records for GhostRescue AI. All names and data are fabricated for testing purposes only.",
+  "source": "synthetic_test_data",
+  "records": [
+    {
+      "canonical_name": "Jane Doe",
+      "entity_type": "person",
+      "aliases": ["J. Doe", "JaneDoe99"],
+      "extra_metadata": {
+        "last_known_location": "Unknown",
+        "reported_date": "2026-01-15",
+        "case_ref": "TEST-001"
+      }
+    },
+    {
+      "canonical_name": "John Carlos Rivera",
+      "entity_type": "person",
+      "aliases": ["J.C. Rivera", "Johnny R"],
+      "extra_metadata": {
+        "last_known_location": "Unknown",
+        "reported_date": "2026-02-01",
+        "case_ref": "TEST-002"
+      }
+    },
+    {
+      "canonical_name": "Ana Lucia Perez",
+      "entity_type": "person",
+      "aliases": ["Ana Perez", "ALP"],
+      "extra_metadata": {
+        "last_known_location": "Unknown",
+        "reported_date": "2026-02-14",
+        "case_ref": "TEST-003"
+      }
+    }
+  ]
+}

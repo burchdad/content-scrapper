@@ -1,0 +1,99 @@
+{
+  "job_id": "d3a9a0e189d740499a6a1927cf27838c",
+  "status": "completed",
+  "plan": {
+    "intent": "media",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": true
+      },
+      {
+        "name": "description",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "image_list",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "audio_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "embed_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "social_links",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "hashtags",
+        "field_type": "array",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "top 5 dogs videos"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:media",
+      "extract:images",
+      "extract:videos",
+      "extract:social_links",
+      "extract:embeds",
+      "prioritize:rich_media"
+    ],
+    "use_playwright": true,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [],
+  "stats": {
+    "pages_processed": 0,
+    "records_extracted": 0,
+    "failures": 1,
+    "elapsed_ms": 29014
+  },
+  "warnings": [
+    {
+      "code": "SOURCE_PACK_AUGMENTED",
+      "message": "Discovery augmented target URLs with curated source-pack seeds.",
+      "url": null
+    },
+    {
+      "code": "FETCH_FAILED",
+      "message": "Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://triller.co/\nCall log:\n  - navigating to \"https://triller.co/\", waiting until \"networkidle\"\n",
+      "url": "https://triller.co/"
+    },
+    {
+      "code": "NO_RECORDS_EXTRACTED",
+      "message": "No records could be extracted.",
+      "url": null
+    }
+  ],
+  "diagnostics": {
+    "primary_issue": "FETCH_FAILURES",
+    "recommendation": "Some targets failed to fetch. Retry with mode=static or reduce max_pages.",
+    "warning_counts": {
+      "SOURCE_PACK_AUGMENTED": 1,
+      "FETCH_FAILED": 1,
+      "NO_RECORDS_EXTRACTED": 1
+    }
+  }
+}

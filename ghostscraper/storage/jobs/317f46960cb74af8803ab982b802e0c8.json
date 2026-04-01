@@ -1,0 +1,131 @@
+{
+  "job_id": "317f46960cb74af8803ab982b802e0c8",
+  "status": "completed",
+  "plan": {
+    "intent": "media",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "embed_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "hashtags",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "social_links",
+        "field_type": "string",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "Pull recent short-form videos, reels, memes, and gifs about entrepreneurship and money mindset from TikTok, YouTube Shorts, Instagram Reels, Tenor, and Giphy"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:media",
+      "extract:images",
+      "extract:videos",
+      "extract:social_links",
+      "extract:embeds",
+      "prioritize:rich_media"
+    ],
+    "use_playwright": true,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [
+    {
+      "source_url": "https://www.pullandbear.com/es/",
+      "canonical_url": null,
+      "record_type": "media",
+      "title": "Access Denied",
+      "data": {
+        "title": "Access Denied",
+        "business_name": "Access Denied",
+        "email": [],
+        "phone": [
+          "217.1774806"
+        ],
+        "social_links": [],
+        "hashtags": [
+          "#18"
+        ]
+      },
+      "images": [],
+      "videos": [],
+      "downloaded_images": [],
+      "confidence": 0.55,
+      "extraction_notes": [
+        "contact_extraction_completed"
+      ]
+    },
+    {
+      "source_url": "https://www.pullandbear.com/",
+      "canonical_url": null,
+      "record_type": "media",
+      "title": "Access Denied",
+      "data": {
+        "title": "Access Denied",
+        "business_name": "Access Denied",
+        "email": [],
+        "phone": [
+          "217.1774806"
+        ],
+        "social_links": [],
+        "hashtags": [
+          "#18"
+        ]
+      },
+      "images": [],
+      "videos": [],
+      "downloaded_images": [],
+      "confidence": 0.55,
+      "extraction_notes": [
+        "contact_extraction_completed"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_processed": 2,
+    "records_extracted": 2,
+    "failures": 0,
+    "elapsed_ms": 127236
+  },
+  "warnings": [
+    {
+      "code": "PLAYWRIGHT_MISSING_FALLBACK",
+      "message": "Playwright browser missing; using static fetch fallback.",
+      "url": "https://www.pullandbear.com/es/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.usmagazine.com/celebrity-news/news/martin-short-spotted-for-1st-time-since-daughters-death/"
+    },
+    {
+      "code": "PLAYWRIGHT_MISSING_FALLBACK",
+      "message": "Playwright browser missing; using static fetch fallback.",
+      "url": "https://www.pullandbear.com/"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "preset_id": "9e18c5f4e7e344fcbe3b25a68710dc83",
+    "user_id": "default",
+    "name": "Safety Monitoring Preset",
+    "request": {
+      "query": "monitor public comments for grooming language",
+      "websites": null,
+      "source_pack_ids": [
+        "social-discussion",
+        "short-video-viral",
+        "livestream-clips"
+      ],
+      "output_format": "json",
+      "mode": "auto",
+      "max_pages": 10,
+      "max_depth": 1,
+      "include_images": true,
+      "include_videos": true,
+      "include_mature_content": false,
+      "download_images": false,
+      "image_limit_per_record": 20,
+      "video_limit_per_record": 20,
+      "paginate": true,
+      "follow_internal_links": false,
+      "use_search_discovery": true,
+      "allowed_domains": null,
+      "blocked_domains": null,
+      "desired_fields": [
+        "title",
+        "source_url",
+        "social_links",
+        "hashtags",
+        "image_urls",
+        "video_urls"
+      ],
+      "custom_schema": null,
+      "timeout_seconds": 30,
+      "retries": 2,
+      "respect_robots_txt": true,
+      "user_agent": null
+    },
+    "created_at": "2026-03-30T02:53:23.831314Z",
+    "updated_at": "2026-03-30T02:53:23.831314Z"
+  }
+]

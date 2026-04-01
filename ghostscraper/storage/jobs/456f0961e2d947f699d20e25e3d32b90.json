@@ -1,0 +1,481 @@
+{
+  "job_id": "456f0961e2d947f699d20e25e3d32b90",
+  "status": "completed",
+  "plan": {
+    "intent": "media",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": true
+      },
+      {
+        "name": "description",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "image_list",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "audio_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "embed_urls",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "social_links",
+        "field_type": "array",
+        "required": false
+      },
+      {
+        "name": "hashtags",
+        "field_type": "array",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "top 10 trends"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:media",
+      "extract:images",
+      "extract:videos",
+      "extract:social_links",
+      "extract:embeds",
+      "prioritize:rich_media"
+    ],
+    "use_playwright": true,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [
+    {
+      "source_url": "https://giphy.com/trending-gifs",
+      "canonical_url": null,
+      "record_type": "media",
+      "title": "GIPHY - Be Animated",
+      "data": {
+        "title": "GIPHY - Be Animated",
+        "description": "GIPHY is the platform that animates your world. Find the GIFs, Clips, and Stickers that make your conversations more positive, more expressive, and more you.",
+        "business_name": "GIPHY - Be Animated",
+        "email": [],
+        "phone": [],
+        "social_links": [],
+        "embed_urls": [
+          "https://cookies.giphy.com/global-cookies/b99ca0a0e205dbfa7822462a41f4aec40f448658/global-cookies.b99ca0a0e205dbfa7822462a41f4aec40f448658.html"
+        ],
+        "hashtags": [
+          "#angry",
+          "#animals",
+          "#any",
+          "#bridesmaids",
+          "#carnaval",
+          "#carnival",
+          "#concerned",
+          "#confused",
+          "#confusion",
+          "#cute",
+          "#dance",
+          "#dancing",
+          "#does",
+          "#dog",
+          "#doggo",
+          "#dogs",
+          "#easter",
+          "#embarrassed",
+          "#eyes",
+          "#friday",
+          "#frightened",
+          "#funny",
+          "#gingerbread",
+          "#hang",
+          "#hangover",
+          "#happy",
+          "#hung",
+          "#hungover",
+          "#im",
+          "#jenjen",
+          "#justin",
+          "#mood",
+          "#party",
+          "#poop",
+          "#pooping",
+          "#reaction",
+          "#running",
+          "#scared",
+          "#shocked",
+          "#shrek",
+          "#stare",
+          "#staring",
+          "#still",
+          "#waiting",
+          "#woo",
+          "#zebra"
+        ]
+      },
+      "images": [
+        "https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MmV5bmFqZTZzcjI0dXlsZjZnM2Vsa21jdms4dTNnanZpMjhsOWpjYSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/uHRq7NuyqO6FG/100.gif",
+        "https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/joSNxeswxuc74Juo8X/giphy.gif",
+        "https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/10hO3rDNqqg2Xe/200.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/5zhbwvPZVZfWFhTiPG/200.gif",
+        "https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/BDQmMy3ZM8sgRNFkhe/200.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bTA0a2l6N3JyYWd3eXk0eXUxNDAxbG13bGF1Y2UzYjhiMXlpeWsxbSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/FY8c5SKwiNf1EtZKGs/giphy.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/CsCxRMUabVXyM/giphy.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/3d4Ov6CKLPdLSUVQmS/200.gif",
+        "https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/T3fNnBqD4aBxPjOgK9/200.gif",
+        "https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/bXpgshfh5uxupxGFqd/giphy.gif",
+        "https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bTA0a2l6N3JyYWd3eXk0eXUxNDAxbG13bGF1Y2UzYjhiMXlpeWsxbSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/KDA7oUREsSoaDhsUTu/200.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/RtfxC11P0q5JVVCPqc/200.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/13JipyoTNNvM2c/giphy.gif",
+        "https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/FP7g0JkFYO4gK9o4vr/giphy.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/3o7btXyWGLpkoiCA48/200.gif",
+        "https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bTA0a2l6N3JyYWd3eXk0eXUxNDAxbG13bGF1Y2UzYjhiMXlpeWsxbSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/9sSI3GSAssqknYxyAc/giphy.gif",
+        "https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MmV5bmFqZTZzcjI0dXlsZjZnM2Vsa21jdms4dTNnanZpMjhsOWpjYSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/OwXMyUBbXezpG75UTR/giphy.gif",
+        "https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/QhjR3MG9ZFfjB6BtIZ/giphy.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/Gnh8nS5DgqyZy/200.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXFnZ3Y1bmw4MWo5eGZ0MG03ejIyYmNiaXMzc2p6Zzc2cncxaW96ZiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/zQLjk9d31jlMQ/200.gif"
+      ],
+      "videos": [],
+      "downloaded_images": [],
+      "confidence": 0.7,
+      "extraction_notes": [
+        "contact_extraction_completed",
+        "media_social_extraction_completed"
+      ]
+    },
+    {
+      "source_url": "https://tenor.com/search/trending-gifs",
+      "canonical_url": "https://tenor.com/search/trending-gifs",
+      "record_type": "media",
+      "title": "Trending GIFs | Tenor",
+      "data": {
+        "canonical_url": "https://tenor.com/search/trending-gifs",
+        "title": "Trending GIFs | Tenor",
+        "description": "Click to view the GIF",
+        "name": "Trending GIFs | Tenor",
+        "headline": "Trending GIFs | Tenor",
+        "image": {
+          "@context": "http://schema.org",
+          "@type": "ImageObject",
+          "author": "saitaim",
+          "creator": "saitaim",
+          "name": "Trending GIFs | Tenor",
+          "keywords": "trending,gifs,search,memes",
+          "description": "With Tenor, maker of GIF Keyboard, add popular Trending animated GIFs to your conversations. Share the best GIFs now >>>",
+          "url": "https://tenor.com/search/trending-gifs",
+          "contentUrl": "https://media1.tenor.com/m/3YunLjG4jrEAAAAC/sendy-cat-meme.gif",
+          "thumbnailUrl": "https://media.tenor.com/3YunLjG4jrEAAAAe/sendy-cat-meme.png",
+          "width": 458,
+          "height": 498,
+          "dateCreated": "2025-09-09T09:36:24.271Z",
+          "uploadDate": "2025-09-09T09:36:24.271Z",
+          "representativeOfPage": true
+        },
+        "video_urls": [
+          "https://media.tenor.com/3YunLjG4jrEAAAPo/sendy-cat-meme.mp4",
+          "https://media.tenor.com/3YunLjG4jrEAAAPs/sendy-cat-meme.webm"
+        ],
+        "business_name": "Trending GIFs | Tenor",
+        "email": [],
+        "phone": [],
+        "social_links": [],
+        "hashtags": [
+          "#2023",
+          "#Ayyo",
+          "#Bahar",
+          "#Lee",
+          "#MEMES",
+          "#Meme",
+          "#Oh",
+          "#Sai",
+          "#Squidward",
+          "#Tamil",
+          "#Thats",
+          "#Trending",
+          "#atm",
+          "#bull",
+          "#castle",
+          "#castlexyz",
+          "#cat",
+          "#catpop",
+          "#chikiri",
+          "#cibbili",
+          "#crypto",
+          "#cute",
+          "#dream",
+          "#fida",
+          "#flashman",
+          "#get",
+          "#go",
+          "#hasbik",
+          "#hasbulla",
+          "#kitty",
+          "#kya",
+          "#lanehats",
+          "#laughing",
+          "#meme",
+          "#moonsd",
+          "#moonshotdoge",
+          "#pengu",
+          "#penguin",
+          "#proplus",
+          "#proplusgaming",
+          "#proplusyt",
+          "#pudgy",
+          "#pudgypenguins",
+          "#sn3",
+          "#socheers",
+          "#squidward",
+          "#star1",
+          "#starmaker",
+          "#stickergiant",
+          "#trending",
+          "#up",
+          "#uptrend",
+          "#we"
+        ]
+      },
+      "images": [
+        "https://media.tenor.com/NV1ZRuxZY_sAAAAm/squidward-squidward-meme.webp",
+        "https://media.tenor.com/azNagTE2_sMAAAAM/tamil-baby-boy-names-modern-boy-baby-names-in-tamil.gif",
+        "https://media.tenor.com/5XsA1SZiWWoAAAAm/hasbulla-hasbik.webp",
+        "https://media.tenor.com/4mlWf8YuKnUAAAAM/lanehats-get-lanehats-trending.gif",
+        "https://media.tenor.com/Sa_6QPhxnjMAAAAm/bahar-ka-rasta-waha-hai-go-away.webp",
+        "https://media.tenor.com/Gr-r9AUlH3kAAAAM/starmaker-sn3.gif",
+        "https://media.tenor.com/nkYCTPTbWtIAAAAM/we-dream.gif",
+        "https://media.tenor.com/rflLUoqCdxsAAAAm/catpop.webp",
+        "https://media.tenor.com/fzWIfnjkt2sAAAAM/f-cat.gif",
+        "https://media.tenor.com/TtzdJkkFFiYAAAAM/lee-yechan-lee-yechan-kq.gif",
+        "https://media.tenor.com/jZj0f3MOc3AAAAAM/i-feel-like-i-started-a-trend-gucci-mane.gif",
+        "https://media.tenor.com/zdhkZ9lXzoAAAAAm/pengu-pudgy.webp",
+        "https://media.tenor.com/kxP6LoJ1aykAAAAm/ayyo-sigguu-sai-pallavi.webp",
+        "https://media.tenor.com/_UmOMLo-IZQAAAAM/castle-make-and-play-castlexyz.gif",
+        "https://media.tenor.com/qJdPr0VdH-YAAAAM/pengu-pudgy.gif",
+        "https://media.tenor.com/3Nyar9W9bzoAAAAm/kya-baat-kar-rahe-hai-aap-kya-baat.webp",
+        "https://media.tenor.com/jhGJ0Hzrk54AAAAM/thats-the-trend-around-here-thats-whats-hot.gif",
+        "https://media.tenor.com/9eVevBb3xSYAAAAM/trending-trending-hai.gif",
+        "https://media.tenor.com/xF3-lzDDCCQAAAAM/chikiri-flashman-chikiri.gif",
+        "https://media.tenor.com/eDduFOra-mMAAAAM/memes-2023.gif"
+      ],
+      "videos": [
+        "https://media.tenor.com/3YunLjG4jrEAAAPo/sendy-cat-meme.mp4",
+        "https://media.tenor.com/3YunLjG4jrEAAAPs/sendy-cat-meme.webm"
+      ],
+      "downloaded_images": [],
+      "confidence": 0.8,
+      "extraction_notes": [
+        "json_ld_parsed",
+        "contact_extraction_completed"
+      ]
+    },
+    {
+      "source_url": "https://imgur.com/hot",
+      "canonical_url": "https://imgur.com/gallery/three-photos-of-cat-AaUM1H4",
+      "record_type": "media",
+      "title": "Three Photos of My Cat - Caturday post - Imgur",
+      "data": {
+        "canonical_url": "https://imgur.com/gallery/three-photos-of-cat-AaUM1H4",
+        "title": "Three Photos of My Cat - Caturday post - Imgur",
+        "description": "Discover topics like Caturday, and the magic of the internet at Imgur, a community powered entertainment destination. Lift your spirits with funny jokes, trending memes, entertaining gifs, inspiring stories, viral videos, and so much more from users like unwaver.",
+        "business_name": "Three Photos of My Cat - Caturday post - Imgur",
+        "email": [],
+        "phone": [],
+        "social_links": [],
+        "embed_urls": [
+          "https://www.googletagmanager.com/ns.html?id=GTM-M6N38SF"
+        ]
+      },
+      "images": [
+        "https://s.imgur.com/images/accolades/pizza.png",
+        "https://s.imgur.com/images/accolades/best.png",
+        "https://s.imgur.com/images/accolades/originality.png",
+        "https://s.imgur.com/images/accolades/intriguing.png",
+        "https://s.imgur.com/images/accolades/entertaining.png",
+        "https://s.imgur.com/images/accolades/gem.png",
+        "https://s.imgur.com/images/accolades/here.png",
+        "https://s.imgur.com/images/accolades/back.png",
+        "https://i.imgur.com/4ilCGhE_d.webp?maxwidth=760&fidelity=grand",
+        "https://i.imgur.com/b5lt3yI_d.webp?maxwidth=760&fidelity=grand",
+        "https://i.imgur.com/RReCQAW_d.webp?maxwidth=760&fidelity=grand",
+        "https://s.imgur.com/desktop-assets/desktop-assets/chevron-down-w.c9d88e9dd4a2c859ee05.svg",
+        "https://i.imgur.com/NDhrWOQ_d.webp?maxwidth=128&shape=thumb",
+        "https://i.imgur.com/aq5PXkb_d.webp?maxwidth=128&shape=thumb",
+        "https://i.imgur.com/kwTjYn5_d.webp?maxwidth=128&shape=thumb",
+        "https://i.imgur.com/VGlWJ2l_d.webp?maxwidth=128&shape=thumb",
+        "https://i.imgur.com/ACaxUi7_d.webp?maxwidth=128&shape=thumb",
+        "https://static.adsafeprotected.com/skeleton.gif?adspot_id=ad_300x250_7435261",
+        "https://i.imgur.com/8AVctYw_d.png?maxwidth=290&fidelity=grand",
+        "https://i.imgur.com/O0wcZUmb.jpg"
+      ],
+      "videos": [],
+      "downloaded_images": [],
+      "confidence": 0.8,
+      "extraction_notes": [
+        "contact_extraction_completed",
+        "media_social_extraction_completed"
+      ]
+    },
+    {
+      "source_url": "https://imgur.com/gallery/pupper-got-boogie-woogie-SAHg8Vq",
+      "canonical_url": "https://imgur.com/gallery/pupper-got-boogie-woogie-SAHg8Vq",
+      "record_type": "media",
+      "title": "Pupper got the boogie woogie. - GIF - Imgur",
+      "data": {
+        "canonical_url": "https://imgur.com/gallery/pupper-got-boogie-woogie-SAHg8Vq",
+        "title": "Pupper got the boogie woogie. - GIF - Imgur",
+        "description": "Discover topics like Aww, Cute, dog, dogs, Puppy, and the magic of the internet at Imgur, a community powered entertainment destination. Lift your spirits with funny jokes, trending memes, entertaining gifs, inspiring stories, viral videos, and so much more from users like Bruskey.",
+        "name": "Pupper got the boogie woogie.",
+        "published_at": "2026-03-29T16:27:39Z",
+        "video_urls": [
+          "https://i.imgur.com/0QdkGgB.mp4",
+          "https://i.imgur.com/NDhrWOQ.mp4",
+          "https://i.imgur.com/wFAXOou_lq.mp4",
+          "https://i.imgur.com/jBhSy5O_lq.mp4",
+          "https://i.imgur.com/pUUszHu_lq.mp4",
+          "https://i.imgur.com/xhJGFyI_lq.mp4",
+          "https://i.imgur.com/r9eFIOZ_lq.mp4",
+          "https://i.imgur.com/KPGkaXl_lq.mp4",
+          "https://i.imgur.com/oMoQiwi_lq.mp4",
+          "https://i.imgur.com/qBGEeqK_lq.mp4",
+          "https://i.imgur.com/G5yAEkj_lq.mp4",
+          "https://i.imgur.com/5NMOR7d_lq.mp4",
+          "https://i.imgur.com/OVJDpGQ_lq.mp4",
+          "https://i.imgur.com/lgxCjqc_lq.mp4"
+        ],
+        "embed_urls": [
+          "https://www.googletagmanager.com/ns.html?id=GTM-M6N38SF",
+          "https://gum.criteo.com/syncframe?origin=publishertagids&topUrl=imgur.com&gdpr=0&gdpr_consent=#{\"bundle\":{\"origin\":0},\"optout\":{\"value\":false,\"origin\":0},\"tld\":\"imgur.com\",\"topUrl\":\"imgur.com\",\"version\":105800,\"origin\":\"publishertagids\",\"requestId\":\"0.6618179989064541\"}",
+          "https://eb2.3lift.com/sync?gdpr=0&redir=https%3A%2F%2Fads.assemblyexchange.com%2Fdoh%2Fingest%3Fpartner%3Dtriple_lift%26uid%3Dd2aedf48-d7ba-40ba-94ae-2447ed71548b%26property_id%3Dimgur.com%26app_version%3Dweb_0.0.1%26lib_version%3Dweb_5.30.0%26partner_uid%3D$UID",
+          "https://sync.1rx.io/usersync2/rmpssp?sub=whisper&gdpr=0&redir=https%3A%2F%2Fads.assemblyexchange.com%2Fdoh%2Fingest%3Fpartner%3Dunruly%26uid%3Dd2aedf48-d7ba-40ba-94ae-2447ed71548b%26property_id%3Dimgur.com%26app_version%3Dweb_0.0.1%26lib_version%3Dweb_5.30.0%26partner_uid%3D%5BRX_UUID%5D",
+          "https://sync.cootlogix.com/api/user/html/55537adc33d1b40300987e8e?redirect=https%3A%2F%2Fads.assemblyexchange.com%2Fdoh%2Fingest%3Fpartner%3Dvidazoo%26uid%3Dd2aedf48-d7ba-40ba-94ae-2447ed71548b%26property_id%3Dimgur.com%26app_version%3Dweb_0.0.1%26lib_version%3Dweb_5.30.0%26partner_uid%3D%24%7BvdzUserSyncMacro%7D&gdpr=0",
+          "https://cm.g.doubleclick.net/partnerpixels?gdpr=0&url=https%3A%2F%2Fimgur.com%2Fgallery%2Fpupper-got-boogie-woogie-SAHg8Vq"
+        ],
+        "business_name": "Pupper got the boogie woogie. - GIF - Imgur",
+        "email": [],
+        "phone": [],
+        "social_links": [
+          "https://sync.cootlogix.com/api/user/html/55537adc33d1b40300987e8e?redirect=https%3A%2F%2Fads.assemblyexchange.com%2Fdoh%2Fingest%3Fpartner%3Dvidazoo%26uid%3Dd2aedf48-d7ba-40ba-94ae-2447ed71548b%26property_id%3Dimgur.com%26app_version%3Dweb_0.0.1%26lib_version%3Dweb_5.30.0%26partner_uid%3D%24%7BvdzUserSyncMacro%7D&gdpr=0"
+        ]
+      },
+      "images": [
+        "https://s.imgur.com/images/accolades/pizza.png",
+        "https://s.imgur.com/images/accolades/best.png",
+        "https://s.imgur.com/images/accolades/originality.png",
+        "https://s.imgur.com/images/accolades/intriguing.png",
+        "https://s.imgur.com/images/accolades/entertaining.png",
+        "https://s.imgur.com/images/accolades/gem.png",
+        "https://s.imgur.com/images/accolades/here.png",
+        "https://s.imgur.com/images/accolades/back.png",
+        "https://i.imgur.com/NDhrWOQ_d.webp?maxwidth=760&fidelity=grand",
+        "https://s.imgur.com/desktop-assets/desktop-assets/chevron-down-w.c9d88e9dd4a2c859ee05.svg",
+        "https://i.imgur.com/aq5PXkb_d.webp?maxwidth=128&shape=thumb",
+        "https://i.imgur.com/kwTjYn5_d.webp?maxwidth=128&shape=thumb",
+        "https://i.imgur.com/VGlWJ2l_d.webp?maxwidth=128&shape=thumb",
+        "https://i.imgur.com/ACaxUi7_d.webp?maxwidth=128&shape=thumb",
+        "https://i.imgur.com/i4btYx7_d.webp?maxwidth=128&shape=thumb",
+        "https://i.imgur.com/EuzIFZ9_d.webp?maxwidth=520&shape=thumb&fidelity=high",
+        "https://i.imgur.com/pFVVlxT_d.webp?maxwidth=520&shape=thumb&fidelity=high",
+        "https://i.imgur.com/HA3xzJZ_d.webp?maxwidth=520&shape=thumb&fidelity=high",
+        "https://i.imgur.com/Zzl7s1d_d.webp?maxwidth=520&shape=thumb&fidelity=high",
+        "https://i.imgur.com/5NMOR7d.webp?tb"
+      ],
+      "videos": [
+        "https://i.imgur.com/0QdkGgB.mp4",
+        "https://i.imgur.com/NDhrWOQ.mp4",
+        "https://i.imgur.com/wFAXOou_lq.mp4",
+        "https://i.imgur.com/jBhSy5O_lq.mp4",
+        "https://i.imgur.com/pUUszHu_lq.mp4",
+        "https://i.imgur.com/xhJGFyI_lq.mp4",
+        "https://i.imgur.com/r9eFIOZ_lq.mp4",
+        "https://i.imgur.com/KPGkaXl_lq.mp4",
+        "https://i.imgur.com/oMoQiwi_lq.mp4",
+        "https://i.imgur.com/qBGEeqK_lq.mp4",
+        "https://i.imgur.com/G5yAEkj_lq.mp4",
+        "https://i.imgur.com/5NMOR7d_lq.mp4",
+        "https://i.imgur.com/OVJDpGQ_lq.mp4",
+        "https://i.imgur.com/lgxCjqc_lq.mp4"
+      ],
+      "downloaded_images": [],
+      "confidence": 0.8,
+      "extraction_notes": [
+        "json_ld_parsed",
+        "contact_extraction_completed",
+        "media_video_extraction_completed",
+        "media_social_extraction_completed"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_processed": 4,
+    "records_extracted": 4,
+    "failures": 2,
+    "elapsed_ms": 187209
+  },
+  "warnings": [
+    {
+      "code": "SOURCE_PACK_AUGMENTED",
+      "message": "Discovery augmented target URLs with curated source-pack seeds.",
+      "url": null
+    },
+    {
+      "code": "FETCH_FAILED",
+      "message": "Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://triller.co/\nCall log:\n  - navigating to \"https://triller.co/\", waiting until \"networkidle\"\n",
+      "url": "https://triller.co/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://knowyourmeme.com/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://9gag.com/trending"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.reddit.com/r/popular/"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://news.ycombinator.com/"
+    },
+    {
+      "code": "DYNAMIC_TIMEOUT",
+      "message": "Dynamic fetch timed out",
+      "url": "https://www.tumblr.com/explore/trending"
+    },
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://lemmy.world/"
+    }
+  ],
+  "diagnostics": {
+    "primary_issue": null,
+    "recommendation": "Run complete. Use records preview or CSV export for structured review.",
+    "warning_counts": {
+      "SOURCE_PACK_AUGMENTED": 1,
+      "FETCH_FAILED": 1,
+      "ROBOTS_BLOCKED": 5,
+      "DYNAMIC_TIMEOUT": 1
+    }
+  }
+}

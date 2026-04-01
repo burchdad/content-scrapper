@@ -1,0 +1,121 @@
+{
+  "job_id": "a24a150c505c47598b32c9f073fe7ddc",
+  "status": "completed",
+  "plan": {
+    "intent": "real_estate",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "address",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "city",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "state",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "price",
+        "field_type": "number",
+        "required": false
+      },
+      {
+        "name": "beds",
+        "field_type": "number",
+        "required": false
+      },
+      {
+        "name": "baths",
+        "field_type": "number",
+        "required": false
+      },
+      {
+        "name": "sqft",
+        "field_type": "number",
+        "required": false
+      },
+      {
+        "name": "description",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "image_list",
+        "required": false
+      },
+      {
+        "name": "listing_agent",
+        "field_type": "string",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "find real estate listing details and photos"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:real_estate",
+      "extract:images",
+      "extract:videos",
+      "extract:price",
+      "extract:beds_baths_sqft",
+      "prioritize:galleries"
+    ],
+    "use_playwright": false,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [
+    {
+      "source_url": "https://listing.example.com/home/123",
+      "canonical_url": null,
+      "record_type": "real_estate",
+      "title": "123 Main St Listing",
+      "data": {
+        "title": "123 Main St Listing",
+        "business_name": "123 Main St Listing",
+        "email": [],
+        "phone": [],
+        "social_links": [],
+        "address": "123 Main St, Austin TX",
+        "price": 325000.0,
+        "beds": 4.0,
+        "baths": 2.0,
+        "sqft": 2100.0,
+        "description": "123 Main St Listing 123 Main St, Austin TX $325,000 4 beds 2 baths 2,100 sq ft"
+      },
+      "images": [
+        "https://listing.example.com/images/kitchen.jpg",
+        "https://listing.example.com/images/exterior.webp",
+        "https://listing.example.com/hero.jpg"
+      ],
+      "videos": [],
+      "downloaded_images": [],
+      "confidence": 0.6,
+      "extraction_notes": [
+        "contact_extraction_completed",
+        "listing_extraction_completed"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_processed": 1,
+    "records_extracted": 1,
+    "failures": 0,
+    "elapsed_ms": 4
+  },
+  "warnings": [],
+  "diagnostics": {
+    "primary_issue": null,
+    "recommendation": "Run complete. Use records preview or CSV export for structured review.",
+    "warning_counts": {}
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "job_id": "571909bba5d74d209a407c20bdd39550",
+  "status": "completed",
+  "plan": {
+    "intent": "media",
+    "strategy": "hybrid",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "source_url",
+        "field_type": "string",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "top dog video"
+    ],
+    "target_urls": [
+      "https://commons.wikimedia.org/wiki/Category:Dogs",
+      "https://www.reddit.com/r/dogs/",
+      "https://pixabay.com/videos/search/dog/"
+    ],
+    "extraction_hints": [
+      "intent:media",
+      "extract:images",
+      "extract:videos",
+      "extract:social_links",
+      "extract:embeds",
+      "prioritize:rich_media"
+    ],
+    "use_playwright": true,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [
+    {
+      "source_url": "https://commons.wikimedia.org/wiki/Category:Dogs",
+      "canonical_url": "https://commons.wikimedia.org/wiki/Category:Dogs",
+      "record_type": "media",
+      "title": "Category:Dogs - Wikimedia Commons",
+      "data": {
+        "canonical_url": "https://commons.wikimedia.org/wiki/Category:Dogs",
+        "title": "Category:Dogs - Wikimedia Commons",
+        "business_name": "Category:Dogs - Wikimedia Commons",
+        "email": [],
+        "phone": [
+          "(1439724124",
+          "(4298011100",
+          "(4298011132",
+          "(4298011152",
+          "(4878222556"
+        ],
+        "social_links": [],
+        "video_urls": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Canemangia.ogv/230px--Canemangia.ogv.jpg"
+        ]
+      },
+      "images": [
+        "https://commons.wikimedia.org/static/images/mobile/copyright/commonswiki-wordmark.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Collage_of_Nine_Dogs.jpg/250px-Collage_of_Nine_Dogs.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Collage_of_Nine_Dogs.jpg/500px-Collage_of_Nine_Dogs.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Greenland_467_%2835130903436%29_%28cropped%29.jpg/250px-Greenland_467_%2835130903436%29_%28cropped%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Greenland_467_%2835130903436%29_%28cropped%29.jpg/500px-Greenland_467_%2835130903436%29_%28cropped%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Disambig.svg/20px-Disambig.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Disambig.svg/40px-Disambig.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/40px-Blue_pencil.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sub-arrows.svg/40px-Sub-arrows.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sub-arrows.svg/60px-Sub-arrows.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sub-arrows.svg/120px-Sub-arrows.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/%22Louie_the_Italian_Greyhound%22.jpg/120px-%22Louie_the_Italian_Greyhound%22.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/%22Louie_the_Italian_Greyhound%22.jpg/250px-%22Louie_the_Italian_Greyhound%22.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/1000030670_My_Hunting_Dog_-_My_Best_Friend.jpg/120px-1000030670_My_Hunting_Dog_-_My_Best_Friend.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/1000030670_My_Hunting_Dog_-_My_Best_Friend.jpg/250px-1000030670_My_Hunting_Dog_-_My_Best_Friend.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/2021-07-10-vanino-dog-with-diverse-eyes-7182.jpg/120px-2021-07-10-vanino-dog-with-diverse-eyes-7182.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/2021-07-10-vanino-dog-with-diverse-eyes-7182.jpg/250px-2021-07-10-vanino-dog-with-diverse-eyes-7182.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/230705_NVWG_PORTLAND_0310_%2853025872325%29.jpg/120px-230705_NVWG_PORTLAND_0310_%2853025872325%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/230705_NVWG_PORTLAND_0310_%2853025872325%29.jpg/250px-230705_NVWG_PORTLAND_0310_%2853025872325%29.jpg"
+      ],
+      "videos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Canemangia.ogv/230px--Canemangia.ogv.jpg"
+      ],
+      "downloaded_images": [],
+      "confidence": 0.7,
+      "extraction_notes": [
+        "contact_extraction_completed",
+        "media_video_extraction_completed",
+        "site_agent:generic-web-agent"
+      ]
+    },
+    {
+      "source_url": "https://commons.wikimedia.org/w/index.php?title=Category:Dogs&filefrom=Polski+Owczarek+Podhala%C5%84ski+16.jpg#mw-category-media",
+      "canonical_url": "https://commons.wikimedia.org/wiki/Category:Dogs",
+      "record_type": "media",
+      "title": "Category:Dogs - Wikimedia Commons",
+      "data": {
+        "canonical_url": "https://commons.wikimedia.org/wiki/Category:Dogs",
+        "title": "Category:Dogs - Wikimedia Commons",
+        "business_name": "Category:Dogs - Wikimedia Commons",
+        "email": [],
+        "phone": [
+          "1025180973",
+          "9870075578"
+        ],
+        "social_links": [],
+        "video_urls": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Canemangia.ogv/230px--Canemangia.ogv.jpg"
+        ]
+      },
+      "images": [
+        "https://commons.wikimedia.org/static/images/mobile/copyright/commonswiki-wordmark.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Collage_of_Nine_Dogs.jpg/250px-Collage_of_Nine_Dogs.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Collage_of_Nine_Dogs.jpg/500px-Collage_of_Nine_Dogs.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Greenland_467_%2835130903436%29_%28cropped%29.jpg/250px-Greenland_467_%2835130903436%29_%28cropped%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Greenland_467_%2835130903436%29_%28cropped%29.jpg/500px-Greenland_467_%2835130903436%29_%28cropped%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Disambig.svg/20px-Disambig.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Disambig.svg/40px-Disambig.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/40px-Blue_pencil.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sub-arrows.svg/40px-Sub-arrows.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sub-arrows.svg/60px-Sub-arrows.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sub-arrows.svg/120px-Sub-arrows.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Polski_Owczarek_Podhala%C5%84ski_16.jpg/120px-Polski_Owczarek_Podhala%C5%84ski_16.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Polski_Owczarek_Podhala%C5%84ski_16.jpg/250px-Polski_Owczarek_Podhala%C5%84ski_16.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Polski_Owczarek_Podhala%C5%84ski_17.jpg/120px-Polski_Owczarek_Podhala%C5%84ski_17.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Polski_Owczarek_Podhala%C5%84ski_17.jpg/250px-Polski_Owczarek_Podhala%C5%84ski_17.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Polski_Owczarek_Podhala%C5%84ski_18.jpg/120px-Polski_Owczarek_Podhala%C5%84ski_18.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Polski_Owczarek_Podhala%C5%84ski_18.jpg/250px-Polski_Owczarek_Podhala%C5%84ski_18.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Polski_Owczarek_Podhala%C5%84ski_19.jpg/120px-Polski_Owczarek_Podhala%C5%84ski_19.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Polski_Owczarek_Podhala%C5%84ski_19.jpg/250px-Polski_Owczarek_Podhala%C5%84ski_19.jpg"
+      ],
+      "videos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Canemangia.ogv/230px--Canemangia.ogv.jpg"
+      ],
+      "downloaded_images": [],
+      "confidence": 0.7,
+      "extraction_notes": [
+        "contact_extraction_completed",
+        "media_video_extraction_completed",
+        "site_agent:generic-web-agent"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_processed": 2,
+    "records_extracted": 2,
+    "failures": 1,
+    "elapsed_ms": 72505
+  },
+  "warnings": [
+    {
+      "code": "ROBOTS_BLOCKED",
+      "message": "robots.txt disallowed scraping",
+      "url": "https://www.reddit.com/r/dogs/"
+    },
+    {
+      "code": "DYNAMIC_TIMEOUT",
+      "message": "Dynamic fetch timed out",
+      "url": "https://pixabay.com/videos/search/dog/"
+    }
+  ],
+  "diagnostics": {
+    "primary_issue": null,
+    "recommendation": "Run complete. Use records preview or CSV export for structured review.",
+    "warning_counts": {
+      "ROBOTS_BLOCKED": 1,
+      "DYNAMIC_TIMEOUT": 1
+    }
+  }
+}

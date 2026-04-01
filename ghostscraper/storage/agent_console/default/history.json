@@ -1,0 +1,37 @@
+[
+  {
+    "history_id": "8e616c8223574e9f9e9d7cc11390cd5d",
+    "user_id": "default",
+    "label": "top dog video",
+    "request": {
+      "query": "top dog video",
+      "websites": null,
+      "source_pack_ids": [],
+      "output_format": "json",
+      "mode": "auto",
+      "max_pages": 10,
+      "max_depth": 1,
+      "include_images": true,
+      "include_videos": true,
+      "include_mature_content": false,
+      "download_images": false,
+      "image_limit_per_record": 20,
+      "video_limit_per_record": 20,
+      "paginate": true,
+      "follow_internal_links": false,
+      "use_search_discovery": true,
+      "allowed_domains": null,
+      "blocked_domains": null,
+      "desired_fields": [],
+      "custom_schema": null,
+      "timeout_seconds": 30,
+      "retries": 2,
+      "respect_robots_txt": true,
+      "user_agent": null
+    },
+    "run_async": true,
+    "created_at": "2026-03-29T23:26:53.369781Z",
+    "last_run_at": "2026-03-29T23:26:53.369781Z",
+    "job_id": "e395855a54344589955a70538229face"
+  }
+]

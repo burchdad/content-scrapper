@@ -1,0 +1,170 @@
+{
+  "job_id": "4674a9bd01644d55befaab780684591d",
+  "status": "completed",
+  "plan": {
+    "intent": "media",
+    "strategy": "search_then_scrape",
+    "fields": [
+      {
+        "name": "title",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "video_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "image_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "embed_urls",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "hashtags",
+        "field_type": "string",
+        "required": false
+      },
+      {
+        "name": "social_links",
+        "field_type": "string",
+        "required": false
+      }
+    ],
+    "candidate_queries": [
+      "Pull recent short-form videos, reels, memes, and gifs about entrepreneurship and money mindset from TikTok, YouTube Shorts, Instagram Reels, Tenor, and Giphy"
+    ],
+    "target_urls": [],
+    "extraction_hints": [
+      "intent:media",
+      "extract:images",
+      "extract:videos",
+      "extract:social_links",
+      "extract:embeds",
+      "prioritize:rich_media"
+    ],
+    "use_playwright": true,
+    "paginate": true,
+    "click_galleries": true,
+    "capture_images": true
+  },
+  "records": [
+    {
+      "source_url": "https://giphy.com/trending-gifs",
+      "canonical_url": null,
+      "record_type": "media",
+      "title": "GIPHY - Be Animated",
+      "data": {
+        "title": "GIPHY - Be Animated",
+        "description": "GIPHY is the platform that animates your world. Find the GIFs, Clips, and Stickers that make your conversations more positive, more expressive, and more you.",
+        "business_name": "GIPHY - Be Animated",
+        "email": [],
+        "phone": [],
+        "social_links": [],
+        "embed_urls": [
+          "https://cookies.giphy.com/global-cookies/b99ca0a0e205dbfa7822462a41f4aec40f448658/global-cookies.b99ca0a0e205dbfa7822462a41f4aec40f448658.html"
+        ],
+        "hashtags": [
+          "#angry",
+          "#animals",
+          "#any",
+          "#bridesmaids",
+          "#carnaval",
+          "#carnival",
+          "#concerned",
+          "#confused",
+          "#confusion",
+          "#cute",
+          "#dance",
+          "#dancing",
+          "#does",
+          "#dog",
+          "#doggo",
+          "#dogs",
+          "#easter",
+          "#embarrassed",
+          "#eyes",
+          "#friday",
+          "#frightened",
+          "#funny",
+          "#gingerbread",
+          "#hang",
+          "#hangover",
+          "#happy",
+          "#hung",
+          "#hungover",
+          "#im",
+          "#jenjen",
+          "#justin",
+          "#mood",
+          "#party",
+          "#poop",
+          "#pooping",
+          "#reaction",
+          "#running",
+          "#scared",
+          "#shocked",
+          "#shrek",
+          "#stare",
+          "#staring",
+          "#still",
+          "#waiting",
+          "#woo",
+          "#zebra"
+        ]
+      },
+      "images": [
+        "https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cGRtZW0wMHhlOGUwMmNqMTlwYjJnOHVieTYyeWlnYTUxa3QxNmg3eCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/uHRq7NuyqO6FG/100.gif",
+        "https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/joSNxeswxuc74Juo8X/giphy.gif",
+        "https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/10hO3rDNqqg2Xe/200.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/5zhbwvPZVZfWFhTiPG/200.gif",
+        "https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/BDQmMy3ZM8sgRNFkhe/200.gif",
+        "https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MDN4cG8yMjg2bWF5b3c1b28xd2c1eXJmY20zeXNpeTUyNno1MzVkOCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/FY8c5SKwiNf1EtZKGs/giphy.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/CsCxRMUabVXyM/giphy.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/3d4Ov6CKLPdLSUVQmS/200.gif",
+        "https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/T3fNnBqD4aBxPjOgK9/200.gif",
+        "https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/bXpgshfh5uxupxGFqd/giphy.gif",
+        "https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MDN4cG8yMjg2bWF5b3c1b28xd2c1eXJmY20zeXNpeTUyNno1MzVkOCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/KDA7oUREsSoaDhsUTu/200.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/RtfxC11P0q5JVVCPqc/200.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/13JipyoTNNvM2c/giphy.gif",
+        "https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/FP7g0JkFYO4gK9o4vr/giphy.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/3o7btXyWGLpkoiCA48/200.gif",
+        "https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MDN4cG8yMjg2bWF5b3c1b28xd2c1eXJmY20zeXNpeTUyNno1MzVkOCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/9sSI3GSAssqknYxyAc/giphy.gif",
+        "https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cGRtZW0wMHhlOGUwMmNqMTlwYjJnOHVieTYyeWlnYTUxa3QxNmg3eCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/OwXMyUBbXezpG75UTR/giphy.gif",
+        "https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/QhjR3MG9ZFfjB6BtIZ/giphy.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/Gnh8nS5DgqyZy/200.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aXY0NzJmYmpnb3RhM2ViNHhoOTllZ2hsdWRyZ25pZW03amVnb2U4ZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/zQLjk9d31jlMQ/200.gif"
+      ],
+      "videos": [],
+      "downloaded_images": [],
+      "confidence": 0.6,
+      "extraction_notes": [
+        "contact_extraction_completed",
+        "media_social_extraction_completed"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_processed": 1,
+    "records_extracted": 1,
+    "failures": 1,
+    "elapsed_ms": 135564
+  },
+  "warnings": [
+    {
+      "code": "SOURCE_PACK_AUGMENTED",
+      "message": "Discovery augmented target URLs with curated source-pack seeds.",
+      "url": null
+    },
+    {
+      "code": "FETCH_FAILED",
+      "message": "Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://triller.co/\nCall log:\n  - navigating to \"https://triller.co/\", waiting until \"networkidle\"\n",
+      "url": "https://triller.co/"
+    }
+  ]
+}
